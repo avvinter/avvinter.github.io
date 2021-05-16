@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="320" name="MobileOptimized">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Limit Typeface – Slab</title>
+	<link rel="stylesheet" type="text/css" href="css/sliders-specimen.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+	<style type="text/css">
+	
+    body{text-rendering:geometricPrecision; background-color: #ccc;margin:0; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto;}
+    
+	.wrap{margin:0 auto;max-width: 1000px;background-color: white;}
+	.header{padding:10px;padding-bottom:6px;border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
+	.navigation{width:100%;border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;box-sizing: border-box;padding:0;float:left;}
+	.navigation a{padding:5px 8px 8px 8px; text-decoration:none; color:#000;float:left;}
+	.navigation a:hover{text-decoration:none; background-color:#eee;}
+	.textinput-sliders{width:100%;background-color:;padding:7px 5px 10px 5px;box-sizing: border-box;font-size: 12px;letter-spacing: 0.5px;font-family:'limit-80';}
+	.textinput-sliders span{font-size: 12px;letter-spacing: 0.5px;font-family:'limit-80';}
+	.textinput-sliders p{font-size: 12px;letter-spacing: 0.5px;font-family:'limit-80';}
+	.inputbox{float:left;box-sizing: border-box;padding: 0px 5px 0px 5px;width:25%;}
+	.fontname{padding:10px;border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
+	#h{font-family: 'limit-slab';font-size: 30px;padding:0px 10px 10px 10px;box-sizing:border-box;border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
+	.segment-c1{
+		font-size:28px;
+		padding:6px 10px 10px 10px;
+		border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;
+		width:100%;float:left;
+		box-sizing: border-box;
+		column-count: 1;
+  		column-width: 100%;
+  		height: 286px;
+  		overflow: hidden;
+  		display: -webkit-box;
+  		-webkit-line-clamp: 8;
+  		-webkit-box-orient: vertical;
+  		text-overflow: ellipsis #fff; white-space: wrap; 
+  		color:white;
+	}
+	.segment-c2{
+		font-size:20px;
+		padding:6px 10px 10px 10px;
+		border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;
+		width:100%;float:left;
+		box-sizing: border-box;
+		
+  		display: ;
+
+  		height: 329px;
+  		overflow: hidden;
+  		display:inline-block;
+  		-webkit-line-clamp: 10;
+  		-webkit-box-orient: vertical;
+  		text-overflow: ellipsis #fff;  
+  		color:white;
+
+  		column-count: 2;
+  		column-width: 50%;	
+	}
+	.tcol{color:#333;}
+	.segment-c3{
+		display:flexbox;
+		font-size:14px;
+		padding:6px 10px 10px 10px;
+		border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;
+		width:calc(100%);float:left;
+		box-sizing: border-box;
+		column-count: 3;
+  		column-width: 33%;
+  		line-height: 17px;
+  		height: 323px;
+  		overflow: hidden;
+  		text-overflow:hidden;
+	}
+	.segment-c4{
+		display: flexbox;
+		font-size:10px;
+		padding:6px 10px 10px 10px;
+		border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;
+		width:100%;float:left;
+		box-sizing: border-box;
+		column-count: 4;
+  		column-width: 25%;
+  		letter-spacing: 0.5px;
+  		
+  		height: 257px;
+  		overflow: hidden;
+  		text-overflow:hidden;		
+	}
+	.f80{font-family:'limit-80';}
+
+	.fs140{font-family:'limit-slab';font-variation-settings:'wght' 140;}
+	.fs100{font-family:'limit-slab';font-variation-settings:'wght' 100;}
+	.fs80{font-family:'limit-slab';font-variation-settings:'wght' 80;}
+	.fs56{font-family:'limit-slab';font-variation-settings:'wght' 56;}
+	.fs32{font-family:'limit-slab';font-variation-settings:'wght' 32;}
+	.fs18{font-family:'limit-slab';font-variation-settings:'wght' 18;letter-spacing: 0.5px;}
+	.fs10{font-family:'limit-slab';font-variation-settings:'wght' 10;letter-spacing: 0.5px;}
+	.sans{font-family: sans-serif;font-size: 13px;}
+	p{margin:0;padding:0;/*font-variant-numeric: oldstyle-nums;*/}
+	[contenteditable] {outline: 0px solid transparent;}
+	.glyphbox{
+		width:10%;
+		box-sizing:border-box;
+		border-right:1px solid #ccc;border-right:0.5px solid #ccc;
+		border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;
+		text-align:center;
+		float:left;
+		padding-bottom:10px;
+	}
+	.glyphbox p{font-size:60px;}
+	.glyphbox span{font-size:10px;letter-spacing: 0.5px;}
+	#bw{border-right:1px solid #fff;}
+	#ham{background-image: url('img/hamlines.svg');}
+	#ham:hover{background-color: #f6f6f6;}
+	input[type=checkbox]{display: none;}
+
+	@media only screen and (max-width: 600px) {
+		/*toggle mobile- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+		.nava{height:40px;width:40px; float:right;}
+		.nava:hover{cursor: pointer;}
+		label {	background-color:;	cursor: pointer;}
+		label:hover { color: #000;}
+		.navtoggle {  -webkit-transition: height .3s ease;  height: 0;  overflow: hidden;	}
+		input[type=checkbox]:checked + .navtoggle {height:165px;}
+	 	/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+		.header{border-bottom:none; }
+		.inputbox{width:100%;margin-bottom: 10px;}
+		.navigation a{display: block;float:none;border-bottom:1px solid #ccc;border-bottom:0.5px solid #ccc;}
+		.navigation a:last-child{border-bottom: none;}
+		.navigation a:first-child{border-top:1px solid #ccc;border-top:0.5px solid #ccc;}
+		.segment-c2{column-count: 1;}
+    	.segment-c3{column-count: 1;}
+    	.segment-c4{column-count: 2;}
+    	.glyphbox{width:20%;}
+   		.f{border-right: 1px solid #fff;}
+	}
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+    	.header{border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
+    		.inputbox{width:50%;}
+    		.segment-c2{column-count: 1;}
+    		.segment-c3{column-count: 1;}
+    		.segment-c4{column-count: 2;}
+    		.glyphbox{width:20%;}
+    		.f{border-right: 1px solid #fff;}
+
+    }
+	@media only screen and (min-width: 801px) {
+	    	.header{border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
+	}
+</style>
+</head>
+<script type="text/javascript">
+	
+    var oldY=100;
+    document.getElementById("h").style[font-variation-settings] = "'wght'" + oldY;
+    function checkwidth(){
+    	var w = window.innerWidth;
+    	if(w<601){document.getElementById("ham").style.display= "inline-block";}
+    	else {document.getElementById("ham").style.display= "none";}
+    }
+</script>
+<body onresize="checkwidth()">
+<div class="wrap">
+	<!-- HEADER -->
+	<div class="header">
+		<img src="img/limit.svg" width="180px">
+		<label for="check" class="nava" id="ham"></label>
+		<div style="clear:left;float:none;"></div>
+	</div>
+
+	<input id="check" class="ham" type="checkbox">
+	<div class="f80 navigation navtoggle">
+		<a href="Limit-Normal.html">Limit Normal</a>
+		<a href="Limit-Slab.html">Limit Slab</a>
+		<a href="Limit-Parameter.html">Limit Parameter</a>
+		<a href="Limit-Inline.html">Limit Inline</a>
+		<a href="Limit-Specimen.html">Digital Type Specimen</a>
+	</div>
+
+	<div style="clear:left;float:none;"></div>
+	<!-- ---------------- -->
+	<!-- Typetester --> 
+    <!-- ---------------- -->
+	 <div class="textinput-sliders">
+		<form>
+			<div class="inputbox">
+		    		<input type="range" min="10" max="100" value="100" id="weight_slider">
+		    		<p>weight: <span id="weight_demo"></span></p>
+		   	</div>
+		    <div class="inputbox">
+			    	<input type="range" min="20" max="100" value="30" id="fsize">
+			   		<p>type size: <span id="wdemo">30 px</span></p> 
+		   	</div>	
+		    </form>
+	</div>
+	<div style="clear:left;float:none;"></div>
+	<div class="textinput" >
+ 		<div id="h" contenteditable="true" spellcheck="false">
+		»Everyday scripts, by contrast, served trade and commerce. But the works of the poets, philosophers and historians are also recorded in these more fluent styles, which facilitated more rapid writing and reading.«
+		<br>
+		Otl Aicher
+		</div>
+	</div>
+	<!-- ---------------- -->
+	<!-- Limit Normal 18 --> 
+    <!-- ---------------- -->
+	<div class="fs18 fontname">Limit Slab 18</div>
+
+	<div class="segment-c1 fs18"><span class="tcol">
+		Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. 
+	</span>
+	</div>
+	<div class="segment-c2 fs18"><span class="tcol">Alle Schriftformen, deren Wesen durch zum Skelett hinzutretende Ornamente (Schraffuren bei der Antiqua, Rauten und Rüssel bei der Fraktur) entstellt ist, entsprechen nicht unserem Streben nach Klarheit und Reinheit. Unter allen vorhandenen Schriftarten ist die sogenannte »Grotesk« oder Blockschrift (die richtige Bezeichnung wäre »Skelettschrift«) die einzige, die unserer Zeit geistig gemäß ist. Die Proklamierung der Grotesk als der Schrift unserer Zeit ist nicht etwa eine Modeangelegenheit, sie entspricht durchaus den allgemeinen Tendenzen, z.B. denen in der Architektur. Die Zeit ist nicht mehr fern, wo nicht nur die Künstlerschriften (die dieses Los zum Teil schon heute trifft), sondern auch die »klassischen« Schriften allgemein dieselbe Ablehnung erfahren werden, die heute etwa den Muschelmöbeln der achtziger Jahre zuteil wird. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig. Die meisten, und gerade die neuesten künstlerischen Groteskschriften (z.B. Erbar Grotesk und Kabel) zeigen individuell modifizierte Bewegungen, die sie grundsätzlich in eine Linie mit den andern Künstlerschriften stellen. Einen wesentlichen Schritt nach vorwärts bedeutet die Futura von Paul Renner.
+	</span>
+	</div>
+	<div class="segment-c3 fs18"><p>Das Wesen der Nauen Typographie ist Klarheit. Dies stellt sie in den bewußten Gegensatz zu der alten Typographie, die auf »Schönheit« ausgeht und deren Klarheit nicht das heute erforderliche äußerste Maß erreicht. Diese äußerste Klarheit ist notwendig, weil die vielfältige Inanspruchnahme des heutigen Menschen durch außerordentliche Mengen von Gedrucktem zu höchster Ökonomie des Ausdrucks zwingt. Das sanfte Pendeln zwischen ornamentalen Schriften, der(äußerlich aufgefaßten) »schönen« Erscheinung und der »Verzierung« durch wesensfremde Zutaten (Ornamente) kann nie eine reine Form, wie wir sie fordern, hervorbringen. Vor allem bewirkt die schwächliche Anklammerung an den Popanz der Mittelachsengruppierung die hochgradige Starrheit der bisherigen Typographie. In der alten Typographie ist der äußere Aufbau der Einzelgruppe dem Prinzip der Mittelachsengruppierung untergeordnet. In dem einleitenden historischen Aufsatz habe ich dargelegt, daß dieses Prinzip mit der Renaissance aufkam und seitdem nicht verlassen worden ist. Das rein Äußerliche dieses Formgesetzes wird angesichts echter Renaissance- und Barocktitel offenbar (siehe Seite 17 und 18). Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. Selbst in der guten Mittelachsenkomposition wird der Inhalt dem »schönen Zeilenfall« geopfert, das Ganze ist eine »Form«, die vorausgewußt ist und darum unorganisch sein muß. Ich persönlich glaube, daß es nicht einem einzelnen vorbehalten sein kann, die Schrift unseres Zeitalters zu schaffen, die von jeder persönlichen Linienführung frei sein müßte. Sie wird das Werk mehrerer sein, unter denen sich wohl auch ein Ingenieur befinden müßte. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen insbesondere der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig. In der alten Typographie ist der äußere Aufbau der Einzelgruppe dem Prinzip der Mittelachsengruppierung untergeordnet.
+	</p>
+	</div>
+	<div class="segment-c4 fs18"><p>Dem Tempo der umwälzenden technischen Erfindungen des ausgehenden 19. und des beginnenden 20. Jahrhunderts sind nur langsam das Anpassungsvermögen und die Fähigkeit des Menschen gefolgt, sich die neuen Gegebenheiten zunutze zu machen und aus ihnen eine neue Lebensform zu entwickeln. Die »Zivilisation« und die überschnelle Durchdringung aller Gesellschaftsschichten mit den Ergebnissen der technischen Erfindungen haben zu einem völligen kulturellen Chaos geführt, dessen Ursache in der mangelnden Fähigkeit der betroffenen Generation liegt, aus den neuen Tatsachen Folgerungen für die allgemeine Lebensführung zu ziehen. Die neue Generation, die diesem Zustand gegenübertritt, ist frei von den Vorurteilen dem Neuen gegenüber, wie sie die frühere Generation beherrschten. Die technische Vervollkommnung aller wie auch gearteten Vehikel des Menschen findet die absolute Bejahung der jungen Generation und hat in ihr eine der früheren entgegengesetzte ganz neue Einstellung zur Umwelt hervorgebracht. Die Gegenstände der heute im Zenit befindlichen Generation leiden unter dem fatalen Kompromiß zwischen einer angenommenen »künstlerischen« Absicht und den technischen Notwendigkeiten und Bindungen; an dem unselbständigen Zurückblicken auf historische Parallelfäile; dem Zwiespalt zwischen Wesen und Erscheinung. Statt die eigenen Gesetzmäßigkeiten der Maschinenproduktion zu erkennen und zu gestalten, begnügte sich diese Zeit mit der ängstlichen Nachfolge einer übrigens nur eingebildeten »Tradition«. Ihr stehen heute jene Werke gegenüber, die, unbelastet durch vergangenheit, primäre Erscheinungen, das Antlitz unserer Zeit bestimmt haben: Auto Flugzeug Telephon Radio Warenhaus Lichtreklame New-York. Diese ohne Rücksicht auf ästhetische Vorurteile gestalteten Dinge sind von einem neuen Menschentyp geschaffen worden: dem Ingenieur. Dieser Ingenieur ist der Gestalter unseres Zeitalters, Kennzeichen seiner Werke: Ökonomie, Präzisiori, Bildung aus reinen, konstruktiven Formen, die der Funktion des Gegenstands entsprechen. Nichts, das bezeichnender für unsere Zeit wäre, als diese Zeugen des Erfindergeistes der Ingenieure, seien es Einzelleistungen: Flugplatz, Fabrikhalle, Triebwagen der Untergrund; seien es Standardformen: Schreibmaschine, Glühbirne oder Motorrad. An ihnen hat sich eine neue - unsere - Einstellung zur Umwelt entwickelt und gestählt. Eine ungeheure Bereicherung des Lebensgefühls ist von diesen uns auf Schritt und Tritt begegnenden technischen Tatsachen ausgegangen. Das Ganze, das Kollektiv, bestimmt schon heute in hohem Maße die materiellen Lebensformen jedes einzelnen: gleichgeartete Grundbedürfnisse des Individuums werden von Standarderzeugnissen befriedigt: Glühbirne, Schallplatte, Van Heusen Kragen, Zeissbücherschrank, Büchsenmilch, Telephon, Büromöbel, Schreibmaschine, Gillette-Apparat. Die Standardisierung, Normung und Elektromechanung der Gebrauchsgegenstände wird noch weiter zunehmen. Folge der Ökonomie ihrer Herstellungsweise und ihres Materialverbrauchs wird eine ständige Verbesserung sein. Doch wäre Elektromechanung als Selbstzweck ein Unsinn; ihre Sinngebung ist ein Folgezustand, der auf der Basis der Befriedigung elementarer Bedürfnisse durch höchstwertige Standardprodukte zum ersten Male eine wirkliche und freie Entfaltung aller schöpferischen Kräfte des Menschen ermöglicht. Auf einigen Gebieten machen Standardisierung, auf den meisten ist fast alles noch zu tun. Auch Haus und Wohnung einander entsprechender Individuen sind in ihrem Aufbau gleichgeartet genug und durchaus geeignet, die Forderung der Zeit nach Normung. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen insbesondere der Kleinbuchstaben sind noch von der Minuskel abhängig. 
+	</div>
+	<div class="glyphboxstyle fs18">
+		<div class="glyphbox"><p>A</p><span class="f80">0041</span></div>
+		<div class="glyphbox"><p>Ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>B</p><span class="f80">0042</span></div>
+		<div class="glyphbox"><p>C</p><span class="f80">0043</span></div>
+		<div class="glyphbox f"><p>D</p><span class="f80">0044</span></div>
+		<div class="glyphbox"><p>E</p><span class="f80">0045</span></div>
+		<div class="glyphbox"><p>F</p><span class="f80">0046</span></div>
+		<div class="glyphbox"><p>G</p><span class="f80">0047</span></div>
+		<div class="glyphbox"><p>H</p><span class="f80">0048</span></div>
+		<div class="glyphbox f" id="bw"><p>I</p><span class="f80">0049</span></div>
+		<div class="glyphbox"><p>J</p><span class="f80">004A</span></div>
+		<div class="glyphbox"><p>K</p><span class="f80">004B</span></div>
+		<div class="glyphbox"><p>L</p><span class="f80">004C</span></div>
+		<div class="glyphbox"><p>M</p><span class="f80">004D</span></div>
+		<div class="glyphbox f"><p>N</p><span class="f80">004E</span></div>
+		<div class="glyphbox"><p>O</p><span class="f80">004F</span></div>
+		<div class="glyphbox"><p>Ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>P</p><span class="f80">0050</span></div>
+		<div class="glyphbox"><p>Q</p><span class="f80">0051</span></div>
+		<div class="glyphbox f" id="bw"><p>R</p><span class="f80">0052</span></div>
+		<div class="glyphbox"><p>S</p><span class="f80">0053</span></div>
+		<div class="glyphbox"><p>T</p><span class="f80">0054</span></div>
+		<div class="glyphbox"><p>U</p><span class="f80">0055</span></div>
+		<div class="glyphbox"><p>Ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>V</p><span class="f80">0056</span></div>
+		<div class="glyphbox"><p>W</p><span class="f80">0057</span></div>
+		<div class="glyphbox"><p>X</p><span class="f80">0058</span></div>
+		<div class="glyphbox"><p>Y</p><span class="f80">0059</span></div>
+		<div class="glyphbox"><p>Z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>&#7838;</p><span class="f80">1E9E</span></div>
+		<div class="glyphbox"><p>a</p><span class="f80">0061</span></div>
+		<div class="glyphbox"><p>ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>b</p><span class="f80">0062</span></div>
+		<div class="glyphbox"><p>c</p><span class="f80">0063</span></div>
+		<div class="glyphbox f"><p>d</p><span class="f80">0064</span></div>
+		<div class="glyphbox"><p>e</p><span class="f80">0065</span></div>
+		<div class="glyphbox"><p>f</p><span class="f80">0066</span></div>
+		<div class="glyphbox"><p>g</p><span class="f80">0067</span></div>
+		<div class="glyphbox"><p>h</p><span class="f80">0068</span></div>
+		<div class="glyphbox f" id="bw"><p>i</p><span class="f80">0069</span></div>
+		<div class="glyphbox"><p>j</p><span class="f80">006A</span></div>
+		<div class="glyphbox"><p>k</p><span class="f80">006B</span></div>
+		<div class="glyphbox"><p>l</p><span class="f80">006C</span></div>
+		<div class="glyphbox"><p>m</p><span class="f80">006D</span></div>
+		<div class="glyphbox f"><p>n</p><span class="f80">006E</span></div>
+		<div class="glyphbox"><p>o</p><span class="f80">006F</span></div>
+		<div class="glyphbox"><p>ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>p</p><span class="f80">0070</span></div>
+		<div class="glyphbox"><p>q</p><span class="f80">0071</span></div>
+		<div class="glyphbox f" id="bw"><p>r</p><span class="f80">0072</span></div>
+		<div class="glyphbox"><p>s</p><span class="f80">0073</span></div>
+		<div class="glyphbox"><p>t</p><span class="f80">0074</span></div>
+		<div class="glyphbox"><p>u</p><span class="f80">0075</span></div>
+		<div class="glyphbox"><p>ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>v</p><span class="f80">0076</span></div>
+		<div class="glyphbox"><p>w</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>x</p><span class="f80">0078</span></div>
+		<div class="glyphbox"><p>y</p><span class="f80">0079</span></div>
+		<div class="glyphbox"><p>z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>ß</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>0</p><span class="f80">0030</span></div>
+		<div class="glyphbox"><p>1</p><span class="f80">0031</span></div>
+		<div class="glyphbox"><p>2</p><span class="f80">0032</span></div>
+		<div class="glyphbox"><p>3</p><span class="f80">0033</span></div>
+		<div class="glyphbox f"><p>4</p><span class="f80">0034</span></div>
+		<div class="glyphbox"><p>5</p><span class="f80">0035</span></div>
+		<div class="glyphbox"><p>6</p><span class="f80">0036</span></div>
+		<div class="glyphbox"><p>7</p><span class="f80">0037</span></div>
+		<div class="glyphbox"><p>8</p><span class="f80">0038</span></div>
+		<div class="glyphbox f" id="bw"><p>9</p><span class="f80">0039</span></div>
+		<div class="glyphbox"><p>.</p><span class="f80">002E</span></div>
+		<div class="glyphbox"><p>,</p><span class="f80">002C</span></div>
+		<div class="glyphbox"><p>;</p><span class="f80">003A</span></div>
+		<div class="glyphbox"><p>-</p><span class="f80">002D</span></div>	
+		<div class="glyphbox f"><p>(</p><span class="f80">0028</span></div>
+		<div class="glyphbox"><p>)</p><span class="f80">0029</span></div>
+		<div class="glyphbox"><p>[</p><span class="f80">005B</span></div>
+		<div class="glyphbox"><p>]</p><span class="f80">005C</span></div>
+		<div class="glyphbox"><p>»</p><span class="f80">00AB</span></div>
+		<div class="glyphbox" id="bw"><p>«</p><span class="f80">00AC</span></div>
+	</div>	
+	<div style="clear:left;float:none;"></div>
+	<!-- ---------------- -->
+	<!-- Limit Normal 32 --> 
+    <!-- ---------------- -->
+	<div class="fs32 fontname">Limit Slab 32</div>
+
+	<div class="segment-c1 fs32"><span class="tcol">
+		Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. 
+	</span>
+	</div>
+	<div class="segment-c2 fs32"><span class="tcol">Alle Schriftformen, deren Wesen durch zum Skelett hinzutretende Ornamente (Schraffuren bei der Antiqua, Rauten und Rüssel bei der Fraktur) entstellt ist, entsprechen nicht unserem Streben nach Klarheit und Reinheit. Unter allen vorhandenen Schriftarten ist die sogenannte »Grotesk« oder Blockschrift (die richtige Bezeichnung wäre »Skelettschrift«) die einzige, die unserer Zeit geistig gemäß ist. Die Proklamierung der Grotesk als der Schrift unserer Zeit ist nicht etwa eine Modeangelegenheit, sie entspricht durchaus den allgemeinen Tendenzen, z.B. denen in der Architektur. Die Zeit ist nicht mehr fern, wo nicht nur die Künstlerschriften (die dieses Los zum Teil schon heute trifft), sondern auch die »klassischen« Schriften allgemein dieselbe Ablehnung erfahren werden, die heute etwa den Muschelmöbeln der achtziger Jahre zuteil wird. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig. Die meisten, und gerade die neuesten künstlerischen Groteskschriften (z.B. Erbar Grotesk und Kabel) zeigen individuell modifizierte Bewegungen, die sie grundsätzlich in eine Linie mit den andern Künstlerschriften stellen. Einen wesentlichen Schritt nach vorwärts bedeutet die Futura von Paul Renner.
+	</span>
+	</div>
+	<div class="segment-c3 fs32"><p>Das Wesen der Nauen Typographie ist Klarheit. Dies stellt sie in den bewußten Gegensatz zu der alten Typographie, die auf »Schönheit« ausgeht und deren Klarheit nicht das heute erforderliche äußerste Maß erreicht. Diese äußerste Klarheit ist notwendig, weil die vielfältige Inanspruchnahme des heutigen Menschen durch außerordentliche Mengen von Gedrucktem zu höchster Ökonomie des Ausdrucks zwingt. Das sanfte Pendeln zwischen ornamentalen Schriften, der(äußerlich aufgefaßten) »schönen« Erscheinung und der »Verzierung« durch wesensfremde Zutaten (Ornamente) kann nie eine reine Form, wie wir sie fordern, hervorbringen. Vor allem bewirkt die schwächliche Anklammerung an den Popanz der Mittelachsengruppierung die hochgradige Starrheit der bisherigen Typographie. In der alten Typographie ist der äußere Aufbau der Einzelgruppe dem Prinzip der Mittelachsengruppierung untergeordnet. In dem einleitenden historischen Aufsatz habe ich dargelegt, daß dieses Prinzip mit der Renaissance aufkam und seitdem nicht verlassen worden ist. Das rein Äußerliche dieses Formgesetzes wird angesichts echter Renaissance- und Barocktitel offenbar (siehe Seite 17 und 18). Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. Selbst in der guten Mittelachsenkomposition wird der Inhalt dem »schönen Zeilenfall« geopfert, das Ganze ist eine »Form«, die vorausgewußt ist und darum unorganisch sein muß. Ich persönlich glaube, daß es nicht einem einzelnen vorbehalten sein kann, die Schrift unseres Zeitalters zu schaffen, die von jeder persönlichen Linienführung frei sein müßte. Sie wird das Werk mehrerer sein, unter denen sich wohl auch ein Ingenieur befinden müßte. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen insbesondere der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig.
+	</p>
+	</div>
+	<div class="segment-c4 fs32"><p>Dem Tempo der umwälzenden technischen Erfindungen des ausgehenden 19. und des beginnenden 20. Jahrhunderts sind nur langsam das Anpassungsvermögen und die Fähigkeit des Menschen gefolgt, sich die neuen Gegebenheiten zunutze zu machen und aus ihnen eine neue Lebensform zu entwickeln. Die »Zivilisation« und die überschnelle Durchdringung aller Gesellschaftsschichten mit den Ergebnissen der technischen Erfindungen haben zu einem völligen kulturellen Chaos geführt, dessen Ursache in der mangelnden Fähigkeit der betroffenen Generation liegt, aus den neuen Tatsachen Folgerungen für die allgemeine Lebensführung zu ziehen. Die neue Generation, die diesem Zustand gegenübertritt, ist frei von den Vorurteilen dem Neuen gegenüber, wie sie die frühere Generation beherrschten. Die technische Vervollkommnung aller wie auch gearteten Vehikel des Menschen findet die absolute Bejahung der jungen Generation und hat in ihr eine der früheren entgegengesetzte ganz neue Einstellung zur Umwelt hervorgebracht. Die Gegenstände der heute im Zenit befindlichen Generation leiden unter dem fatalen Kompromiß zwischen einer angenommenen »künstlerischen« Absicht und den technischen Notwendigkeiten und Bindungen; an dem unselbständigen Zurückblicken auf historische Parallelfäile; dem Zwiespalt zwischen Wesen und Erscheinung. Statt die eigenen Gesetzmäßigkeiten der Maschinenproduktion zu erkennen und zu gestalten, begnügte sich diese Zeit mit der ängstlichen Nachfolge einer übrigens nur eingebildeten »Tradition«. Ihr stehen heute jene Werke gegenüber, die, unbelastet durch vergangenheit, primäre Erscheinungen, das Antlitz unserer Zeit bestimmt haben: Auto Flugzeug Telephon Radio Warenhaus Lichtreklame New-York. Diese ohne Rücksicht auf ästhetische Vorurteile gestalteten Dinge sind von einem neuen Menschentyp geschaffen worden: dem Ingenieur. Dieser Ingenieur ist der Gestalter unseres Zeitalters, Kennzeichen seiner Werke: Ökonomie, Präzisiori, Bildung aus reinen, konstruktiven Formen, die der Funktion des Gegenstands entsprechen. Nichts, das bezeichnender für unsere Zeit wäre, als diese Zeugen des Erfindergeistes der Ingenieure, seien es Einzelleistungen: Flugplatz, Fabrikhalle, Triebwagen der Untergrund; seien es Standardformen: Schreibmaschine, Glühbirne oder Motorrad. An ihnen hat sich eine neue - unsere - Einstellung zur Umwelt entwickelt und gestählt. Eine ungeheure Bereicherung des Lebensgefühls ist von diesen uns auf Schritt und Tritt begegnenden technischen Tatsachen ausgegangen. Das Ganze, das Kollektiv, bestimmt schon heute in hohem Maße die materiellen Lebensformen jedes einzelnen: gleichgeartete Grundbedürfnisse des Individuums werden von Standarderzeugnissen befriedigt: Glühbirne, Schallplatte, Van Heusen Kragen, Zeissbücherschrank, Büchsenmilch, Telephon, Büromöbel, Schreibmaschine, Gillette-Apparat. Die Standardisierung, Normung und Elektromechanung der Gebrauchsgegenstände wird noch weiter zunehmen. Folge der Ökonomie ihrer Herstellungsweise und ihres Materialverbrauchs wird eine ständige Verbesserung sein. Doch wäre Elektromechanung als Selbstzweck ein Unsinn; ihre Sinngebung ist ein Folgezustand, der auf der Basis der Befriedigung elementarer Bedürfnisse durch höchstwertige Standardprodukte zum ersten Male eine wirkliche und freie Entfaltung aller schöpferischen Kräfte des Menschen ermöglicht. Auf einigen Gebieten machen Standardisierung, auf den meisten ist fast alles noch zu tun. Auch Haus und Wohnung einander entsprechender Individuen sind in ihrem Aufbau gleichgeartet genug und durchaus geeignet, die Forderung der Zeit nach Normung. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen insbesondere der Kleinbuchstaben sind noch von der Minuskel abhängig. Die meisten, und gerade die neuesten künstlerischen Groteskschriften (z.B. Erbar Grotesk und Kabel).
+	</div>
+	<div class="glyphboxstyle fs32">
+		<div class="glyphbox"><p>A</p><span class="f80">0041</span></div>
+		<div class="glyphbox"><p>Ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>B</p><span class="f80">0042</span></div>
+		<div class="glyphbox"><p>C</p><span class="f80">0043</span></div>
+		<div class="glyphbox f"><p>D</p><span class="f80">0044</span></div>
+		<div class="glyphbox"><p>E</p><span class="f80">0045</span></div>
+		<div class="glyphbox"><p>F</p><span class="f80">0046</span></div>
+		<div class="glyphbox"><p>G</p><span class="f80">0047</span></div>
+		<div class="glyphbox"><p>H</p><span class="f80">0048</span></div>
+		<div class="glyphbox f" id="bw"><p>I</p><span class="f80">0049</span></div>
+		<div class="glyphbox"><p>J</p><span class="f80">004A</span></div>
+		<div class="glyphbox"><p>K</p><span class="f80">004B</span></div>
+		<div class="glyphbox"><p>L</p><span class="f80">004C</span></div>
+		<div class="glyphbox"><p>M</p><span class="f80">004D</span></div>
+		<div class="glyphbox f"><p>N</p><span class="f80">004E</span></div>
+		<div class="glyphbox"><p>O</p><span class="f80">004F</span></div>
+		<div class="glyphbox"><p>Ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>P</p><span class="f80">0050</span></div>
+		<div class="glyphbox"><p>Q</p><span class="f80">0051</span></div>
+		<div class="glyphbox f" id="bw"><p>R</p><span class="f80">0052</span></div>
+		<div class="glyphbox"><p>S</p><span class="f80">0053</span></div>
+		<div class="glyphbox"><p>T</p><span class="f80">0054</span></div>
+		<div class="glyphbox"><p>U</p><span class="f80">0055</span></div>
+		<div class="glyphbox"><p>Ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>V</p><span class="f80">0056</span></div>
+		<div class="glyphbox"><p>W</p><span class="f80">0057</span></div>
+		<div class="glyphbox"><p>X</p><span class="f80">0058</span></div>
+		<div class="glyphbox"><p>Y</p><span class="f80">0059</span></div>
+		<div class="glyphbox"><p>Z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>&#7838;</p><span class="f80">1E9E</span></div>
+		<div class="glyphbox"><p>a</p><span class="f80">0061</span></div>
+		<div class="glyphbox"><p>ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>b</p><span class="f80">0062</span></div>
+		<div class="glyphbox"><p>c</p><span class="f80">0063</span></div>
+		<div class="glyphbox f"><p>d</p><span class="f80">0064</span></div>
+		<div class="glyphbox"><p>e</p><span class="f80">0065</span></div>
+		<div class="glyphbox"><p>f</p><span class="f80">0066</span></div>
+		<div class="glyphbox"><p>g</p><span class="f80">0067</span></div>
+		<div class="glyphbox"><p>h</p><span class="f80">0068</span></div>
+		<div class="glyphbox f" id="bw"><p>i</p><span class="f80">0069</span></div>
+		<div class="glyphbox"><p>j</p><span class="f80">006A</span></div>
+		<div class="glyphbox"><p>k</p><span class="f80">006B</span></div>
+		<div class="glyphbox"><p>l</p><span class="f80">006C</span></div>
+		<div class="glyphbox"><p>m</p><span class="f80">006D</span></div>
+		<div class="glyphbox f"><p>n</p><span class="f80">006E</span></div>
+		<div class="glyphbox"><p>o</p><span class="f80">006F</span></div>
+		<div class="glyphbox"><p>ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>p</p><span class="f80">0070</span></div>
+		<div class="glyphbox"><p>q</p><span class="f80">0071</span></div>
+		<div class="glyphbox f" id="bw"><p>r</p><span class="f80">0072</span></div>
+		<div class="glyphbox"><p>s</p><span class="f80">0073</span></div>
+		<div class="glyphbox"><p>t</p><span class="f80">0074</span></div>
+		<div class="glyphbox"><p>u</p><span class="f80">0075</span></div>
+		<div class="glyphbox"><p>ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>v</p><span class="f80">0076</span></div>
+		<div class="glyphbox"><p>w</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>x</p><span class="f80">0078</span></div>
+		<div class="glyphbox"><p>y</p><span class="f80">0079</span></div>
+		<div class="glyphbox"><p>z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>ß</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>0</p><span class="f80">0030</span></div>
+		<div class="glyphbox"><p>1</p><span class="f80">0031</span></div>
+		<div class="glyphbox"><p>2</p><span class="f80">0032</span></div>
+		<div class="glyphbox"><p>3</p><span class="f80">0033</span></div>
+		<div class="glyphbox f"><p>4</p><span class="f80">0034</span></div>
+		<div class="glyphbox"><p>5</p><span class="f80">0035</span></div>
+		<div class="glyphbox"><p>6</p><span class="f80">0036</span></div>
+		<div class="glyphbox"><p>7</p><span class="f80">0037</span></div>
+		<div class="glyphbox"><p>8</p><span class="f80">0038</span></div>
+		<div class="glyphbox f" id="bw"><p>9</p><span class="f80">0039</span></div>
+		<div class="glyphbox"><p>.</p><span class="f80">002E</span></div>
+		<div class="glyphbox"><p>,</p><span class="f80">002C</span></div>
+		<div class="glyphbox"><p>;</p><span class="f80">003A</span></div>
+		<div class="glyphbox"><p>-</p><span class="f80">002D</span></div>	
+		<div class="glyphbox f"><p>(</p><span class="f80">0028</span></div>
+		<div class="glyphbox"><p>)</p><span class="f80">0029</span></div>
+		<div class="glyphbox"><p>[</p><span class="f80">005B</span></div>
+		<div class="glyphbox"><p>]</p><span class="f80">005C</span></div>
+		<div class="glyphbox"><p>»</p><span class="f80">00AB</span></div>
+		<div class="glyphbox" id="bw"><p>«</p><span class="f80">00AC</span></div>
+	</div>	
+	<div style="clear:left;float:none;"></div>
+	<!-- ---------------- -->
+	<!-- Limit Normal 56 --> 
+    <!-- ---------------- -->
+	<div class="fs56 fontname">Limit Slab 56</div>
+
+	<div class="segment-c1 fs56"><span class="tcol">
+		Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. 
+	</span>
+	</div>
+	<div class="segment-c2 fs56"><span class="tcol">Alle Schriftformen, deren Wesen durch zum Skelett hinzutretende Ornamente (Schraffuren bei der Antiqua, Rauten und Rüssel bei der Fraktur) entstellt ist, entsprechen nicht unserem Streben nach Klarheit und Reinheit. Unter allen vorhandenen Schriftarten ist die sogenannte »Grotesk« oder Blockschrift (die richtige Bezeichnung wäre »Skelettschrift«) die einzige, die unserer Zeit geistig gemäß ist. Die Proklamierung der Grotesk als der Schrift unserer Zeit ist nicht etwa eine Modeangelegenheit, sie entspricht durchaus den allgemeinen Tendenzen, z.B. denen in der Architektur. Die Zeit ist nicht mehr fern, wo nicht nur die Künstlerschriften (die dieses Los zum Teil schon heute trifft), sondern auch die »klassischen« Schriften allgemein dieselbe Ablehnung erfahren werden, die heute etwa den Muschelmöbeln der achtziger Jahre zuteil wird. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig. Die meisten, und gerade die neuesten künstlerischen Groteskschriften (z.B. Erbar Grotesk und Kabel) zeigen individuell modifizierte Bewegungen, die sie grundsätzlich in eine Linie mit den andern Künstlerschriften stellen. Als Brotschriften sind sie weniger gut als die alten Grotesken.  Einen wesentlichen Schritt nach vorwärts.
+	</span>
+	</div>
+	<div class="segment-c3 fs56"><p>Das Wesen der Nauen Typographie ist Klarheit. Dies stellt sie in den bewußten Gegensatz zu der alten Typographie, die auf »Schönheit« ausgeht und deren Klarheit nicht das heute erforderliche äußerste Maß erreicht. Diese äußerste Klarheit ist notwendig, weil die vielfältige Inanspruchnahme des heutigen Menschen durch außerordentliche Mengen von Gedrucktem zu höchster Ökonomie des Ausdrucks zwingt. Das sanfte Pendeln zwischen ornamentalen Schriften, der(äußerlich aufgefaßten) »schönen« Erscheinung und der »Verzierung« durch wesensfremde Zutaten (Ornamente) kann nie eine reine Form, wie wir sie fordern, hervorbringen. Vor allem bewirkt die schwächliche Anklammerung an den Popanz der Mittelachsengruppierung die hochgradige Starrheit der bisherigen Typographie. In der alten Typographie ist der äußere Aufbau der Einzelgruppe dem Prinzip der Mittelachsengruppierung untergeordnet. In dem einleitenden historischen Aufsatz habe ich dargelegt, daß dieses Prinzip mit der Renaissance aufkam und seitdem nicht verlassen worden ist. Das rein Äußerliche dieses Formgesetzes wird angesichts echter Renaissance- und Barocktitel offenbar (siehe Seite 17 und 18). Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. Selbst in der guten Mittelachsenkomposition wird der Inhalt dem »schönen Zeilenfall« geopfert, das Ganze ist eine »Form«, die vorausgewußt ist und darum unorganisch sein muß. Ich persönlich glaube, daß es nicht einem einzelnen vorbehalten sein kann, die Schrift unseres Zeitalters zu schaffen, die von jeder persönlichen Linienführung frei sein müßte. Sie wird das Werk mehrerer sein, unter denen sich wohl auch ein Ingenieur befinden müßte. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den.
+	</p>
+	</div>
+	<div class="segment-c4 fs56"><p>Dem Tempo der umwälzenden technischen Erfindungen des ausgehenden 19. und des beginnenden 20. Jahrhunderts sind nur langsam das Anpassungsvermögen und die Fähigkeit des Menschen gefolgt, sich die neuen Gegebenheiten zunutze zu machen und aus ihnen eine neue Lebensform zu entwickeln. Die »Zivilisation« und die überschnelle Durchdringung aller Gesellschaftsschichten mit den Ergebnissen der technischen Erfindungen haben zu einem völligen kulturellen Chaos geführt, dessen Ursache in der mangelnden Fähigkeit der betroffenen Generation liegt, aus den neuen Tatsachen Folgerungen für die allgemeine Lebensführung zu ziehen. Die neue Generation, die diesem Zustand gegenübertritt, ist frei von den Vorurteilen dem Neuen gegenüber, wie sie die frühere Generation beherrschten. Die technische Vervollkommnung aller wie auch gearteten Vehikel des Menschen findet die absolute Bejahung der jungen Generation und hat in ihr eine der früheren entgegengesetzte ganz neue Einstellung zur Umwelt hervorgebracht. Die Gegenstände der heute im Zenit befindlichen Generation leiden unter dem fatalen Kompromiß zwischen einer angenommenen »künstlerischen« Absicht und den technischen Notwendigkeiten und Bindungen; an dem unselbständigen Zurückblicken auf historische Parallelfäile; dem Zwiespalt zwischen Wesen und Erscheinung. Statt die eigenen Gesetzmäßigkeiten der Maschinenproduktion zu erkennen und zu gestalten, begnügte sich diese Zeit mit der ängstlichen Nachfolge einer übrigens nur eingebildeten »Tradition«. Ihr stehen heute jene Werke gegenüber, die, unbelastet durch vergangenheit, primäre Erscheinungen, das Antlitz unserer Zeit bestimmt haben: Auto Flugzeug Telephon Radio Warenhaus Lichtreklame New-York. Diese ohne Rücksicht auf ästhetische Vorurteile gestalteten Dinge sind von einem neuen Menschentyp geschaffen worden: dem Ingenieur. Dieser Ingenieur ist der Gestalter unseres Zeitalters, Kennzeichen seiner Werke: Ökonomie, Präzisiori, Bildung aus reinen, konstruktiven Formen, die der Funktion des Gegenstands entsprechen. Nichts, das bezeichnender für unsere Zeit wäre, als diese Zeugen des Erfindergeistes der Ingenieure, seien es Einzelleistungen: Flugplatz, Fabrikhalle, Triebwagen der Untergrund; seien es Standardformen: Schreibmaschine, Glühbirne oder Motorrad. An ihnen hat sich eine neue - unsere - Einstellung zur Umwelt entwickelt und gestählt. Eine ungeheure Bereicherung des Lebensgefühls ist von diesen uns auf Schritt und Tritt begegnenden technischen Tatsachen ausgegangen. Das Ganze, das Kollektiv, bestimmt schon heute in hohem Maße die materiellen Lebensformen jedes einzelnen: gleichgeartete Grundbedürfnisse des Individuums werden von Standarderzeugnissen befriedigt: Glühbirne, Schallplatte, Van Heusen Kragen, Zeissbücherschrank, Büchsenmilch, Telephon, Büromöbel, Schreibmaschine, Gillette-Apparat. Die Standardisierung, Normung und Elektromechanung der Gebrauchsgegenstände wird noch weiter zunehmen. Folge der Ökonomie ihrer Herstellungsweise und ihres Materialverbrauchs wird eine ständige Verbesserung sein. Doch wäre Elektromechanung als Selbstzweck ein Unsinn; ihre Sinngebung ist ein Folgezustand, der auf der Basis der Befriedigung elementarer Bedürfnisse durch höchstwertige Standardprodukte zum ersten Male eine wirkliche und freie Entfaltung aller schöpferischen Kräfte des Menschen ermöglicht. Auf einigen Gebieten machen Standardisierung, auf den meisten ist fast alles noch zu tun. Auch Haus und Wohnung einander entsprechender Individuen sind in ihrem Aufbau gleichgeartet genug und durchaus geeignet, die Forderung der Zeit nach Normung. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen insbesondere der Kleinbuchstaben sind noch von der Minuskel abhängig. 
+	</div>
+	<div class="glyphboxstyle fs56">
+		<div class="glyphbox"><p>A</p><span class="f80">0041</span></div>
+		<div class="glyphbox"><p>Ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>B</p><span class="f80">0042</span></div>
+		<div class="glyphbox"><p>C</p><span class="f80">0043</span></div>
+		<div class="glyphbox f"><p>D</p><span class="f80">0044</span></div>
+		<div class="glyphbox"><p>E</p><span class="f80">0045</span></div>
+		<div class="glyphbox"><p>F</p><span class="f80">0046</span></div>
+		<div class="glyphbox"><p>G</p><span class="f80">0047</span></div>
+		<div class="glyphbox"><p>H</p><span class="f80">0048</span></div>
+		<div class="glyphbox f" id="bw"><p>I</p><span class="f80">0049</span></div>
+		<div class="glyphbox"><p>J</p><span class="f80">004A</span></div>
+		<div class="glyphbox"><p>K</p><span class="f80">004B</span></div>
+		<div class="glyphbox"><p>L</p><span class="f80">004C</span></div>
+		<div class="glyphbox"><p>M</p><span class="f80">004D</span></div>
+		<div class="glyphbox f"><p>N</p><span class="f80">004E</span></div>
+		<div class="glyphbox"><p>O</p><span class="f80">004F</span></div>
+		<div class="glyphbox"><p>Ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>P</p><span class="f80">0050</span></div>
+		<div class="glyphbox"><p>Q</p><span class="f80">0051</span></div>
+		<div class="glyphbox f" id="bw"><p>R</p><span class="f80">0052</span></div>
+		<div class="glyphbox"><p>S</p><span class="f80">0053</span></div>
+		<div class="glyphbox"><p>T</p><span class="f80">0054</span></div>
+		<div class="glyphbox"><p>U</p><span class="f80">0055</span></div>
+		<div class="glyphbox"><p>Ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>V</p><span class="f80">0056</span></div>
+		<div class="glyphbox"><p>W</p><span class="f80">0057</span></div>
+		<div class="glyphbox"><p>X</p><span class="f80">0058</span></div>
+		<div class="glyphbox"><p>Y</p><span class="f80">0059</span></div>
+		<div class="glyphbox"><p>Z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>&#7838;</p><span class="f80">1E9E</span></div>
+		<div class="glyphbox"><p>a</p><span class="f80">0061</span></div>
+		<div class="glyphbox"><p>ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>b</p><span class="f80">0062</span></div>
+		<div class="glyphbox"><p>c</p><span class="f80">0063</span></div>
+		<div class="glyphbox f"><p>d</p><span class="f80">0064</span></div>
+		<div class="glyphbox"><p>e</p><span class="f80">0065</span></div>
+		<div class="glyphbox"><p>f</p><span class="f80">0066</span></div>
+		<div class="glyphbox"><p>g</p><span class="f80">0067</span></div>
+		<div class="glyphbox"><p>h</p><span class="f80">0068</span></div>
+		<div class="glyphbox f" id="bw"><p>i</p><span class="f80">0069</span></div>
+		<div class="glyphbox"><p>j</p><span class="f80">006A</span></div>
+		<div class="glyphbox"><p>k</p><span class="f80">006B</span></div>
+		<div class="glyphbox"><p>l</p><span class="f80">006C</span></div>
+		<div class="glyphbox"><p>m</p><span class="f80">006D</span></div>
+		<div class="glyphbox f"><p>n</p><span class="f80">006E</span></div>
+		<div class="glyphbox"><p>o</p><span class="f80">006F</span></div>
+		<div class="glyphbox"><p>ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>p</p><span class="f80">0070</span></div>
+		<div class="glyphbox"><p>q</p><span class="f80">0071</span></div>
+		<div class="glyphbox f" id="bw"><p>r</p><span class="f80">0072</span></div>
+		<div class="glyphbox"><p>s</p><span class="f80">0073</span></div>
+		<div class="glyphbox"><p>t</p><span class="f80">0074</span></div>
+		<div class="glyphbox"><p>u</p><span class="f80">0075</span></div>
+		<div class="glyphbox"><p>ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>v</p><span class="f80">0076</span></div>
+		<div class="glyphbox"><p>w</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>x</p><span class="f80">0078</span></div>
+		<div class="glyphbox"><p>y</p><span class="f80">0079</span></div>
+		<div class="glyphbox"><p>z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>ß</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>0</p><span class="f80">0030</span></div>
+		<div class="glyphbox"><p>1</p><span class="f80">0031</span></div>
+		<div class="glyphbox"><p>2</p><span class="f80">0032</span></div>
+		<div class="glyphbox"><p>3</p><span class="f80">0033</span></div>
+		<div class="glyphbox f"><p>4</p><span class="f80">0034</span></div>
+		<div class="glyphbox"><p>5</p><span class="f80">0035</span></div>
+		<div class="glyphbox"><p>6</p><span class="f80">0036</span></div>
+		<div class="glyphbox"><p>7</p><span class="f80">0037</span></div>
+		<div class="glyphbox"><p>8</p><span class="f80">0038</span></div>
+		<div class="glyphbox f" id="bw"><p>9</p><span class="f80">0039</span></div>
+		<div class="glyphbox"><p>.</p><span class="f80">002E</span></div>
+		<div class="glyphbox"><p>,</p><span class="f80">002C</span></div>
+		<div class="glyphbox"><p>;</p><span class="f80">003A</span></div>
+		<div class="glyphbox"><p>-</p><span class="f80">002D</span></div>	
+		<div class="glyphbox f"><p>(</p><span class="f80">0028</span></div>
+		<div class="glyphbox"><p>)</p><span class="f80">0029</span></div>
+		<div class="glyphbox"><p>[</p><span class="f80">005B</span></div>
+		<div class="glyphbox"><p>]</p><span class="f80">005C</span></div>
+		<div class="glyphbox"><p>»</p><span class="f80">00AB</span></div>
+		<div class="glyphbox" id="bw"><p>«</p><span class="f80">00AC</span></div>
+	</div>	
+	<div style="clear:left;float:none;"></div>
+	<!-- ---------------- -->
+	<!-- Limit Normal 80 --> 
+    <!-- ---------------- -->
+	<div class="fs80 fontname">Limit Slab 80</div>
+
+	<div class="segment-c1 fs80"><span class="tcol">
+		Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. 
+	</span>
+	</div>
+	<div class="segment-c2 fs80"><span class="tcol">Alle Schriftformen, deren Wesen durch zum Skelett hinzutretende Ornamente (Schraffuren bei der Antiqua, Rauten und Rüssel bei der Fraktur) entstellt ist, entsprechen nicht unserem Streben nach Klarheit und Reinheit. Unter allen vorhandenen Schriftarten ist die sogenannte »Grotesk« oder Blockschrift (die richtige Bezeichnung wäre »Skelettschrift«) die einzige, die unserer Zeit geistig gemäß ist. Die Proklamierung der Grotesk als der Schrift unserer Zeit ist nicht etwa eine Modeangelegenheit, sie entspricht durchaus den allgemeinen Tendenzen, z.B. denen in der Architektur. Die Zeit ist nicht mehr fern, wo nicht nur die Künstlerschriften (die dieses Los zum Teil schon heute trifft), sondern auch die »klassischen« Schriften allgemein dieselbe Ablehnung erfahren werden, die heute etwa den Muschelmöbeln der achtziger Jahre zuteil wird. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig. Die meisten, und gerade die neuesten künstlerischen Groteskschriften (z.B. Erbar Grotesk und Kabel) zeigen individuell modifizierte Bewegungen, die sie grundsätzlich in eine Linie mit den andern Künstlerschriften stellen. Als Brotschriften sind sie weniger gut als die alten Grotesken.  Einen wesentlichen Schritt nach vorwärts.
+	</span>
+	</div>
+	<div class="segment-c3 fs80"><p>Das Wesen der Nauen Typographie ist Klarheit. Dies stellt sie in den bewußten Gegensatz zu der alten Typographie, die auf »Schönheit« ausgeht und deren Klarheit nicht das heute erforderliche äußerste Maß erreicht. Diese äußerste Klarheit ist notwendig, weil die vielfältige Inanspruchnahme des heutigen Menschen durch außerordentliche Mengen von Gedrucktem zu höchster Ökonomie des Ausdrucks zwingt. Das sanfte Pendeln zwischen ornamentalen Schriften, der(äußerlich aufgefaßten) »schönen« Erscheinung und der »Verzierung« durch wesensfremde Zutaten (Ornamente) kann nie eine reine Form, wie wir sie fordern, hervorbringen. Vor allem bewirkt die schwächliche Anklammerung an den Popanz der Mittelachsengruppierung die hochgradige Starrheit der bisherigen Typographie. In der alten Typographie ist der äußere Aufbau der Einzelgruppe dem Prinzip der Mittelachsengruppierung untergeordnet. In dem einleitenden historischen Aufsatz habe ich dargelegt, daß dieses Prinzip mit der Renaissance aufkam und seitdem nicht verlassen worden ist. Das rein Äußerliche dieses Formgesetzes wird angesichts echter Renaissance- und Barocktitel offenbar (siehe Seite 17 und 18). Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. Selbst in der guten Mittelachsenkomposition wird der Inhalt dem »schönen Zeilenfall« geopfert, das Ganze ist eine »Form«, die vorausgewußt ist und darum unorganisch sein muß. Ich persönlich glaube, daß es nicht einem einzelnen vorbehalten sein kann, die Schrift unseres Zeitalters zu schaffen, die von jeder persönlichen Linienführung frei sein müßte. Sie wird das Werk mehrerer sein, unter denen sich wohl auch ein Ingenieur befinden müßte. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den.
+	</p>
+	</div>
+	<div class="segment-c4 fs80"><p>Dem Tempo der umwälzenden technischen Erfindungen des ausgehenden 19. und des beginnenden 20. Jahrhunderts sind nur langsam das Anpassungsvermögen und die Fähigkeit des Menschen gefolgt, sich die neuen Gegebenheiten zunutze zu machen und aus ihnen eine neue Lebensform zu entwickeln. Die »Zivilisation« und die überschnelle Durchdringung aller Gesellschaftsschichten mit den Ergebnissen der technischen Erfindungen haben zu einem völligen kulturellen Chaos geführt, dessen Ursache in der mangelnden Fähigkeit der betroffenen Generation liegt, aus den neuen Tatsachen Folgerungen für die allgemeine Lebensführung zu ziehen. Die neue Generation, die diesem Zustand gegenübertritt, ist frei von den Vorurteilen dem Neuen gegenüber, wie sie die frühere Generation beherrschten. Die technische Vervollkommnung aller wie auch gearteten Vehikel des Menschen findet die absolute Bejahung der jungen Generation und hat in ihr eine der früheren entgegengesetzte ganz neue Einstellung zur Umwelt hervorgebracht. Die Gegenstände der heute im Zenit befindlichen Generation leiden unter dem fatalen Kompromiß zwischen einer angenommenen »künstlerischen« Absicht und den technischen Notwendigkeiten und Bindungen; an dem unselbständigen Zurückblicken auf historische Parallelfäile; dem Zwiespalt zwischen Wesen und Erscheinung. Statt die eigenen Gesetzmäßigkeiten der Maschinenproduktion zu erkennen und zu gestalten, begnügte sich diese Zeit mit der ängstlichen Nachfolge einer übrigens nur eingebildeten »Tradition«. Ihr stehen heute jene Werke gegenüber, die, unbelastet durch vergangenheit, primäre Erscheinungen, das Antlitz unserer Zeit bestimmt haben: Auto Flugzeug Telephon Radio Warenhaus Lichtreklame New-York. Diese ohne Rücksicht auf ästhetische Vorurteile gestalteten Dinge sind von einem neuen Menschentyp geschaffen worden: dem Ingenieur. Dieser Ingenieur ist der Gestalter unseres Zeitalters, Kennzeichen seiner Werke: Ökonomie, Präzisiori, Bildung aus reinen, konstruktiven Formen, die der Funktion des Gegenstands entsprechen. Nichts, das bezeichnender für unsere Zeit wäre, als diese Zeugen des Erfindergeistes der Ingenieure, seien es Einzelleistungen: Flugplatz, Fabrikhalle, Triebwagen der Untergrund; seien es Standardformen: Schreibmaschine, Glühbirne oder Motorrad. An ihnen hat sich eine neue - unsere - Einstellung zur Umwelt entwickelt und gestählt. Eine ungeheure Bereicherung des Lebensgefühls ist von diesen uns auf Schritt und Tritt begegnenden technischen Tatsachen ausgegangen. Das Ganze, das Kollektiv, bestimmt schon heute in hohem Maße die materiellen Lebensformen jedes einzelnen: gleichgeartete Grundbedürfnisse des Individuums werden von Standarderzeugnissen befriedigt: Glühbirne, Schallplatte, Van Heusen Kragen, Zeissbücherschrank, Büchsenmilch, Telephon, Büromöbel, Schreibmaschine, Gillette-Apparat. Die Standardisierung, Normung und Elektromechanung der Gebrauchsgegenstände wird noch weiter zunehmen. Folge der Ökonomie ihrer Herstellungsweise und ihres Materialverbrauchs wird eine ständige Verbesserung sein. Doch wäre Elektromechanung als Selbstzweck ein Unsinn; ihre Sinngebung ist ein Folgezustand, der auf der Basis der Befriedigung elementarer Bedürfnisse durch höchstwertige Standardprodukte zum ersten Male eine wirkliche und freie Entfaltung aller schöpferischen Kräfte des Menschen ermöglicht. Auf einigen Gebieten machen Standardisierung, auf den meisten ist fast alles noch zu tun. Auch Haus und Wohnung einander entsprechender Individuen sind in ihrem Aufbau gleichgeartet genug und durchaus geeignet, die Forderung der Zeit nach Normung. Es ist keine Frage, daß die heute vorhandenen.
+	</div>
+	<div class="glyphboxstyle fs80">
+		<div class="glyphbox"><p>A</p><span class="f80">0041</span></div>
+		<div class="glyphbox"><p>Ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>B</p><span class="f80">0042</span></div>
+		<div class="glyphbox"><p>C</p><span class="f80">0043</span></div>
+		<div class="glyphbox f"><p>D</p><span class="f80">0044</span></div>
+		<div class="glyphbox"><p>E</p><span class="f80">0045</span></div>
+		<div class="glyphbox"><p>F</p><span class="f80">0046</span></div>
+		<div class="glyphbox"><p>G</p><span class="f80">0047</span></div>
+		<div class="glyphbox"><p>H</p><span class="f80">0048</span></div>
+		<div class="glyphbox f" id="bw"><p>I</p><span class="f80">0049</span></div>
+		<div class="glyphbox"><p>J</p><span class="f80">004A</span></div>
+		<div class="glyphbox"><p>K</p><span class="f80">004B</span></div>
+		<div class="glyphbox"><p>L</p><span class="f80">004C</span></div>
+		<div class="glyphbox"><p>M</p><span class="f80">004D</span></div>
+		<div class="glyphbox f"><p>N</p><span class="f80">004E</span></div>
+		<div class="glyphbox"><p>O</p><span class="f80">004F</span></div>
+		<div class="glyphbox"><p>Ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>P</p><span class="f80">0050</span></div>
+		<div class="glyphbox"><p>Q</p><span class="f80">0051</span></div>
+		<div class="glyphbox f" id="bw"><p>R</p><span class="f80">0052</span></div>
+		<div class="glyphbox"><p>S</p><span class="f80">0053</span></div>
+		<div class="glyphbox"><p>T</p><span class="f80">0054</span></div>
+		<div class="glyphbox"><p>U</p><span class="f80">0055</span></div>
+		<div class="glyphbox"><p>Ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>V</p><span class="f80">0056</span></div>
+		<div class="glyphbox"><p>W</p><span class="f80">0057</span></div>
+		<div class="glyphbox"><p>X</p><span class="f80">0058</span></div>
+		<div class="glyphbox"><p>Y</p><span class="f80">0059</span></div>
+		<div class="glyphbox"><p>Z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>&#7838;</p><span class="f80">1E9E</span></div>
+		<div class="glyphbox"><p>a</p><span class="f80">0061</span></div>
+		<div class="glyphbox"><p>ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>b</p><span class="f80">0062</span></div>
+		<div class="glyphbox"><p>c</p><span class="f80">0063</span></div>
+		<div class="glyphbox f"><p>d</p><span class="f80">0064</span></div>
+		<div class="glyphbox"><p>e</p><span class="f80">0065</span></div>
+		<div class="glyphbox"><p>f</p><span class="f80">0066</span></div>
+		<div class="glyphbox"><p>g</p><span class="f80">0067</span></div>
+		<div class="glyphbox"><p>h</p><span class="f80">0068</span></div>
+		<div class="glyphbox f" id="bw"><p>i</p><span class="f80">0069</span></div>
+		<div class="glyphbox"><p>j</p><span class="f80">006A</span></div>
+		<div class="glyphbox"><p>k</p><span class="f80">006B</span></div>
+		<div class="glyphbox"><p>l</p><span class="f80">006C</span></div>
+		<div class="glyphbox"><p>m</p><span class="f80">006D</span></div>
+		<div class="glyphbox f"><p>n</p><span class="f80">006E</span></div>
+		<div class="glyphbox"><p>o</p><span class="f80">006F</span></div>
+		<div class="glyphbox"><p>ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>p</p><span class="f80">0070</span></div>
+		<div class="glyphbox"><p>q</p><span class="f80">0071</span></div>
+		<div class="glyphbox f" id="bw"><p>r</p><span class="f80">0072</span></div>
+		<div class="glyphbox"><p>s</p><span class="f80">0073</span></div>
+		<div class="glyphbox"><p>t</p><span class="f80">0074</span></div>
+		<div class="glyphbox"><p>u</p><span class="f80">0075</span></div>
+		<div class="glyphbox"><p>ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>v</p><span class="f80">0076</span></div>
+		<div class="glyphbox"><p>w</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>x</p><span class="f80">0078</span></div>
+		<div class="glyphbox"><p>y</p><span class="f80">0079</span></div>
+		<div class="glyphbox"><p>z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>ß</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>0</p><span class="f80">0030</span></div>
+		<div class="glyphbox"><p>1</p><span class="f80">0031</span></div>
+		<div class="glyphbox"><p>2</p><span class="f80">0032</span></div>
+		<div class="glyphbox"><p>3</p><span class="f80">0033</span></div>
+		<div class="glyphbox f"><p>4</p><span class="f80">0034</span></div>
+		<div class="glyphbox"><p>5</p><span class="f80">0035</span></div>
+		<div class="glyphbox"><p>6</p><span class="f80">0036</span></div>
+		<div class="glyphbox"><p>7</p><span class="f80">0037</span></div>
+		<div class="glyphbox"><p>8</p><span class="f80">0038</span></div>
+		<div class="glyphbox f" id="bw"><p>9</p><span class="f80">0039</span></div>
+		<div class="glyphbox"><p>.</p><span class="f80">002E</span></div>
+		<div class="glyphbox"><p>,</p><span class="f80">002C</span></div>
+		<div class="glyphbox"><p>;</p><span class="f80">003A</span></div>
+		<div class="glyphbox"><p>-</p><span class="f80">002D</span></div>	
+		<div class="glyphbox f"><p>(</p><span class="f80">0028</span></div>
+		<div class="glyphbox"><p>)</p><span class="f80">0029</span></div>
+		<div class="glyphbox"><p>[</p><span class="f80">005B</span></div>
+		<div class="glyphbox"><p>]</p><span class="f80">005C</span></div>
+		<div class="glyphbox"><p>»</p><span class="f80">00AB</span></div>
+		<div class="glyphbox" id="bw"><p>«</p><span class="f80">00AC</span></div>
+	</div>	
+	<div style="clear:left;float:none;"></div>
+	<!-- ---------------- -->
+	<!-- Limit Normal 100 --> 
+    <!-- ---------------- -->
+	<div class="fs100 fontname">Limit Slab 100</div>
+
+	<div class="segment-c1 fs100"><span class="tcol">
+		Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. 
+	</span>
+	</div>
+	<div class="segment-c2 fs100"><span class="tcol">Alle Schriftformen, deren Wesen durch zum Skelett hinzutretende Ornamente (Schraffuren bei der Antiqua, Rauten und Rüssel bei der Fraktur) entstellt ist, entsprechen nicht unserem Streben nach Klarheit und Reinheit. Unter allen vorhandenen Schriftarten ist die sogenannte »Grotesk« oder Blockschrift (die richtige Bezeichnung wäre »Skelettschrift«) die einzige, die unserer Zeit geistig gemäß ist. Die Proklamierung der Grotesk als der Schrift unserer Zeit ist nicht etwa eine Modeangelegenheit, sie entspricht durchaus den allgemeinen Tendenzen, z.B. denen in der Architektur. Die Zeit ist nicht mehr fern, wo nicht nur die Künstlerschriften (die dieses Los zum Teil schon heute trifft), sondern auch die »klassischen« Schriften allgemein dieselbe Ablehnung erfahren werden, die heute etwa den Muschelmöbeln der achtziger Jahre zuteil wird. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig. Die meisten, und gerade die neuesten künstlerischen Groteskschriften (z.B. Erbar Grotesk und Kabel) zeigen individuell modifizierte Bewegungen, die sie grundsätzlich in eine Linie mit den andern Künstlerschriften stellen. Als Brotschriften sind sie weniger gut als die alten Grotesken.  Einen wesentlichen Schritt nach vorwärts bedeutet die Futura von Paul Renner.
+	</span>
+	</div>
+	<div class="segment-c3 fs100"><p>Das Wesen der Nauen Typographie ist Klarheit. Dies stellt sie in den bewußten Gegensatz zu der alten Typographie, die auf »Schönheit« ausgeht und deren Klarheit nicht das heute erforderliche äußerste Maß erreicht. Diese äußerste Klarheit ist notwendig, weil die vielfältige Inanspruchnahme des heutigen Menschen durch außerordentliche Mengen von Gedrucktem zu höchster Ökonomie des Ausdrucks zwingt. Das sanfte Pendeln zwischen ornamentalen Schriften, der(äußerlich aufgefaßten) »schönen« Erscheinung und der »Verzierung« durch wesensfremde Zutaten (Ornamente) kann nie eine reine Form, wie wir sie fordern, hervorbringen. Vor allem bewirkt die schwächliche Anklammerung an den Popanz der Mittelachsengruppierung die hochgradige Starrheit der bisherigen Typographie. In der alten Typographie ist der äußere Aufbau der Einzelgruppe dem Prinzip der Mittelachsengruppierung untergeordnet. In dem einleitenden historischen Aufsatz habe ich dargelegt, daß dieses Prinzip mit der Renaissance aufkam und seitdem nicht verlassen worden ist. Das rein Äußerliche dieses Formgesetzes wird angesichts echter Renaissance- und Barocktitel offenbar (siehe Seite 17 und 18). Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. Selbst in der guten Mittelachsenkomposition wird der Inhalt dem »schönen Zeilenfall« geopfert, das Ganze ist eine »Form«, die vorausgewußt ist und darum unorganisch sein muß. Ich persönlich glaube, daß es nicht einem einzelnen vorbehalten sein kann, die Schrift unseres Zeitalters zu schaffen, die von jeder persönlichen Linienführung frei sein müßte. Sie wird das Werk mehrerer sein, unter denen sich wohl auch ein Ingenieur befinden müßte. 
+	</p>
+	</div>
+	<div class="segment-c4 fs100"><p>Dem Tempo der umwälzenden technischen Erfindungen des ausgehenden 19. und des beginnenden 20. Jahrhunderts sind nur langsam das Anpassungsvermögen und die Fähigkeit des Menschen gefolgt, sich die neuen Gegebenheiten zunutze zu machen und aus ihnen eine neue Lebensform zu entwickeln. Die »Zivilisation« und die überschnelle Durchdringung aller Gesellschaftsschichten mit den Ergebnissen der technischen Erfindungen haben zu einem völligen kulturellen Chaos geführt, dessen Ursache in der mangelnden Fähigkeit der betroffenen Generation liegt, aus den neuen Tatsachen Folgerungen für die allgemeine Lebensführung zu ziehen. Die neue Generation, die diesem Zustand gegenübertritt, ist frei von den Vorurteilen dem Neuen gegenüber, wie sie die frühere Generation beherrschten. Die technische Vervollkommnung aller wie auch gearteten Vehikel des Menschen findet die absolute Bejahung der jungen Generation und hat in ihr eine der früheren entgegengesetzte ganz neue Einstellung zur Umwelt hervorgebracht. Die Gegenstände der heute im Zenit befindlichen Generation leiden unter dem fatalen Kompromiß zwischen einer angenommenen »künstlerischen« Absicht und den technischen Notwendigkeiten und Bindungen; an dem unselbständigen Zurückblicken auf historische Parallelfäile; dem Zwiespalt zwischen Wesen und Erscheinung. Statt die eigenen Gesetzmäßigkeiten der Maschinenproduktion zu erkennen und zu gestalten, begnügte sich diese Zeit mit der ängstlichen Nachfolge einer übrigens nur eingebildeten »Tradition«. Ihr stehen heute jene Werke gegenüber, die, unbelastet durch vergangenheit, primäre Erscheinungen, das Antlitz unserer Zeit bestimmt haben: Auto Flugzeug Telephon Radio Warenhaus Lichtreklame New-York. Diese ohne Rücksicht auf ästhetische Vorurteile gestalteten Dinge sind von einem neuen Menschentyp geschaffen worden: dem Ingenieur. Dieser Ingenieur ist der Gestalter unseres Zeitalters, Kennzeichen seiner Werke: Ökonomie, Präzisiori, Bildung aus reinen, konstruktiven Formen, die der Funktion des Gegenstands entsprechen. Nichts, das bezeichnender für unsere Zeit wäre, als diese Zeugen des Erfindergeistes der Ingenieure, seien es Einzelleistungen: Flugplatz, Fabrikhalle, Triebwagen der Untergrund; seien es Standardformen: Schreibmaschine, Glühbirne oder Motorrad. An ihnen hat sich eine neue - unsere - Einstellung zur Umwelt entwickelt und gestählt. Eine ungeheure Bereicherung des Lebensgefühls ist von diesen uns auf Schritt und Tritt begegnenden technischen Tatsachen ausgegangen. Das Ganze, das Kollektiv, bestimmt schon heute in hohem Maße die materiellen Lebensformen jedes einzelnen: gleichgeartete Grundbedürfnisse des Individuums werden von Standarderzeugnissen befriedigt: Glühbirne, Schallplatte, Van Heusen Kragen, Zeissbücherschrank, Büchsenmilch, Telephon, Büromöbel, Schreibmaschine, Gillette-Apparat. Die Standardisierung, Normung und Elektromechanung der Gebrauchsgegenstände wird noch weiter zunehmen. Folge der Ökonomie ihrer Herstellungsweise und ihres Materialverbrauchs wird eine ständige Verbesserung sein. Doch wäre Elektromechanung als Selbstzweck ein Unsinn; ihre Sinngebung ist ein Folgezustand, der auf der Basis der Befriedigung elementarer Bedürfnisse durch höchstwertige Standardprodukte zum ersten Male eine wirkliche und freie Entfaltung aller schöpferischen Kräfte des Menschen ermöglicht. Auf einigen Gebieten machen Standardisierung, auf den meisten ist fast alles noch zu tun. Auch Haus und Wohnung einander entsprechender Individuen sind in ihrem Aufbau gleichgeartet genug und durchaus geeignet, die Forderung der Zeit nach Normung.
+	</p>
+	</div>
+	<div class="glyphboxstyle fs100">
+		<div class="glyphbox"><p>A</p><span class="f80">0041</span></div>
+		<div class="glyphbox"><p>Ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>B</p><span class="f80">0042</span></div>
+		<div class="glyphbox"><p>C</p><span class="f80">0043</span></div>
+		<div class="glyphbox f"><p>D</p><span class="f80">0044</span></div>
+		<div class="glyphbox"><p>E</p><span class="f80">0045</span></div>
+		<div class="glyphbox"><p>F</p><span class="f80">0046</span></div>
+		<div class="glyphbox"><p>G</p><span class="f80">0047</span></div>
+		<div class="glyphbox"><p>H</p><span class="f80">0048</span></div>
+		<div class="glyphbox f" id="bw"><p>I</p><span class="f80">0049</span></div>
+		<div class="glyphbox"><p>J</p><span class="f80">004A</span></div>
+		<div class="glyphbox"><p>K</p><span class="f80">004B</span></div>
+		<div class="glyphbox"><p>L</p><span class="f80">004C</span></div>
+		<div class="glyphbox"><p>M</p><span class="f80">004D</span></div>
+		<div class="glyphbox f"><p>N</p><span class="f80">004E</span></div>
+		<div class="glyphbox"><p>O</p><span class="f80">004F</span></div>
+		<div class="glyphbox"><p>Ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>P</p><span class="f80">0050</span></div>
+		<div class="glyphbox"><p>Q</p><span class="f80">0051</span></div>
+		<div class="glyphbox f" id="bw"><p>R</p><span class="f80">0052</span></div>
+		<div class="glyphbox"><p>S</p><span class="f80">0053</span></div>
+		<div class="glyphbox"><p>T</p><span class="f80">0054</span></div>
+		<div class="glyphbox"><p>U</p><span class="f80">0055</span></div>
+		<div class="glyphbox"><p>Ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>V</p><span class="f80">0056</span></div>
+		<div class="glyphbox"><p>W</p><span class="f80">0057</span></div>
+		<div class="glyphbox"><p>X</p><span class="f80">0058</span></div>
+		<div class="glyphbox"><p>Y</p><span class="f80">0059</span></div>
+		<div class="glyphbox"><p>Z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>&#7838;</p><span class="f80">1E9E</span></div>
+		<div class="glyphbox"><p>a</p><span class="f80">0061</span></div>
+		<div class="glyphbox"><p>ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>b</p><span class="f80">0062</span></div>
+		<div class="glyphbox"><p>c</p><span class="f80">0063</span></div>
+		<div class="glyphbox f"><p>d</p><span class="f80">0064</span></div>
+		<div class="glyphbox"><p>e</p><span class="f80">0065</span></div>
+		<div class="glyphbox"><p>f</p><span class="f80">0066</span></div>
+		<div class="glyphbox"><p>g</p><span class="f80">0067</span></div>
+		<div class="glyphbox"><p>h</p><span class="f80">0068</span></div>
+		<div class="glyphbox f" id="bw"><p>i</p><span class="f80">0069</span></div>
+		<div class="glyphbox"><p>j</p><span class="f80">006A</span></div>
+		<div class="glyphbox"><p>k</p><span class="f80">006B</span></div>
+		<div class="glyphbox"><p>l</p><span class="f80">006C</span></div>
+		<div class="glyphbox"><p>m</p><span class="f80">006D</span></div>
+		<div class="glyphbox f"><p>n</p><span class="f80">006E</span></div>
+		<div class="glyphbox"><p>o</p><span class="f80">006F</span></div>
+		<div class="glyphbox"><p>ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>p</p><span class="f80">0070</span></div>
+		<div class="glyphbox"><p>q</p><span class="f80">0071</span></div>
+		<div class="glyphbox f" id="bw"><p>r</p><span class="f80">0072</span></div>
+		<div class="glyphbox"><p>s</p><span class="f80">0073</span></div>
+		<div class="glyphbox"><p>t</p><span class="f80">0074</span></div>
+		<div class="glyphbox"><p>u</p><span class="f80">0075</span></div>
+		<div class="glyphbox"><p>ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>v</p><span class="f80">0076</span></div>
+		<div class="glyphbox"><p>w</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>x</p><span class="f80">0078</span></div>
+		<div class="glyphbox"><p>y</p><span class="f80">0079</span></div>
+		<div class="glyphbox"><p>z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>ß</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>0</p><span class="f80">0030</span></div>
+		<div class="glyphbox"><p>1</p><span class="f80">0031</span></div>
+		<div class="glyphbox"><p>2</p><span class="f80">0032</span></div>
+		<div class="glyphbox"><p>3</p><span class="f80">0033</span></div>
+		<div class="glyphbox f"><p>4</p><span class="f80">0034</span></div>
+		<div class="glyphbox"><p>5</p><span class="f80">0035</span></div>
+		<div class="glyphbox"><p>6</p><span class="f80">0036</span></div>
+		<div class="glyphbox"><p>7</p><span class="f80">0037</span></div>
+		<div class="glyphbox"><p>8</p><span class="f80">0038</span></div>
+		<div class="glyphbox f" id="bw"><p>9</p><span class="f80">0039</span></div>
+		<div class="glyphbox"><p>.</p><span class="f80">002E</span></div>
+		<div class="glyphbox"><p>,</p><span class="f80">002C</span></div>
+		<div class="glyphbox"><p>;</p><span class="f80">003A</span></div>
+		<div class="glyphbox"><p>-</p><span class="f80">002D</span></div>	
+		<div class="glyphbox f"><p>(</p><span class="f80">0028</span></div>
+		<div class="glyphbox"><p>)</p><span class="f80">0029</span></div>
+		<div class="glyphbox"><p>[</p><span class="f80">005B</span></div>
+		<div class="glyphbox"><p>]</p><span class="f80">005C</span></div>
+		<div class="glyphbox"><p>»</p><span class="f80">00AB</span></div>
+		<div class="glyphbox" id="bw"><p>«</p><span class="f80">00AC</span></div>
+	</div>	
+	<div style="clear:left;float:none;"></div>
+	<!-- ---------------- -->
+	<!-- Limit Normal 140 --> 
+    <!-- ---------------- -->
+	<div class="fs140 fontname">Limit Slab 140</div>
+	<div class="segment-c1 fs140"><span class="tcol">
+		Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. 
+	</span>
+	</div>
+	<div class="segment-c2 fs140"><span class="tcol">Alle Schriftformen, deren Wesen durch zum Skelett hinzutretende Ornamente (Schraffuren bei der Antiqua, Rauten und Rüssel bei der Fraktur) entstellt ist, entsprechen nicht unserem Streben nach Klarheit und Reinheit. Unter allen vorhandenen Schriftarten ist die sogenannte »Grotesk« oder Blockschrift (die richtige Bezeichnung wäre »Skelettschrift«) die einzige, die unserer Zeit geistig gemäß ist. Die Proklamierung der Grotesk als der Schrift unserer Zeit ist nicht etwa eine Modeangelegenheit, sie entspricht durchaus den allgemeinen Tendenzen, z.B. denen in der Architektur. Die Zeit ist nicht mehr fern, wo nicht nur die Künstlerschriften (die dieses Los zum Teil schon heute trifft), sondern auch die »klassischen« Schriften allgemein dieselbe Ablehnung erfahren werden, die heute etwa den Muschelmöbeln der achtziger Jahre zuteil wird. Es ist keine Frage, daß die heute vorhandenen Groteskschriften den Ansprüchen, die an eine vollkommene Schrift gestellt werden müssen, noch nicht ganz genügen. Die spezifischen Eigentümlichkeiten dieser Schrift sind noch kaum herausgearbeitet, die Formen der Kleinbuchstaben sind noch zu sehr von der humanistischen Minuskel abhängig. 
+	</span>
+	</div>
+	<div class="segment-c3 fs140"><p>Das Wesen der Nauen Typographie ist Klarheit. Dies stellt sie in den bewußten Gegensatz zu der alten Typographie, die auf »Schönheit« ausgeht und deren Klarheit nicht das heute erforderliche äußerste Maß erreicht. Diese äußerste Klarheit ist notwendig, weil die vielfältige Inanspruchnahme des heutigen Menschen durch außerordentliche Mengen von Gedrucktem zu höchster Ökonomie des Ausdrucks zwingt. Das sanfte Pendeln zwischen ornamentalen Schriften, der(äußerlich aufgefaßten) »schönen« Erscheinung und der »Verzierung« durch wesensfremde Zutaten (Ornamente) kann nie eine reine Form, wie wir sie fordern, hervorbringen. Vor allem bewirkt die schwächliche Anklammerung an den Popanz der Mittelachsengruppierung die hochgradige Starrheit der bisherigen Typographie. In der alten Typographie ist der äußere Aufbau der Einzelgruppe dem Prinzip der Mittelachsengruppierung untergeordnet. In dem einleitenden historischen Aufsatz habe ich dargelegt, daß dieses Prinzip mit der Renaissance aufkam und seitdem nicht verlassen worden ist. Das rein Äußerliche dieses Formgesetzes wird angesichts echter Renaissance- und Barocktitel offenbar (siehe Seite 17 und 18). Dort werden Hauptbegriffe ganz willkürlich zerschnitten; die logische Gliederung, die sich zum Beispiel in der Verwendung verschiedener Schriftgrade äußern soll, wird der äußeren Form ganz rücksichtslos geopfert, indem die Hauptzeile nur Dreiviertel des Hauptbegriffs zeigt, der Rest dagegen mehrere Grade kleiner in die nächste Gruppe übernommen wird. Solche Dinge gibt es heute freilich kaum noch, aber die Starrheit axiale Anordnung läßt eben kaum eine Durcharbeitung nach logischen Gesichtspunkten in dem Grade zu, wie sie das heutige Leben fordert. Als unsichtbares künstliches Rückgrat zieht sich die Mittelachse durch das Ganze und täuscht ebenso innere Haltung vor, wie der wilhelminische fünf Zentimeter hohe steife Kragen. Selbst in der guten Mittelachsenkomposition wird der Inhalt dem »schönen Zeilenfall« geopfert, das Ganze ist eine »Form«, die vorausgewußt ist und darum unorganisch sein muß.
+	</p>
+	</div>
+	<div class="segment-c4 fs140"><p>Dem Tempo der umwälzenden technischen Erfindungen des ausgehenden 19. und des beginnenden 20. Jahrhunderts sind nur langsam das Anpassungsvermögen und die Fähigkeit des Menschen gefolgt, sich die neuen Gegebenheiten zunutze zu machen und aus ihnen eine neue Lebensform zu entwickeln. Die »Zivilisation« und die überschnelle Durchdringung aller Gesellschaftsschichten mit den Ergebnissen der technischen Erfindungen haben zu einem völligen kulturellen Chaos geführt, dessen Ursache in der mangelnden Fähigkeit der betroffenen Generation liegt, aus den neuen Tatsachen Folgerungen für die allgemeine Lebensführung zu ziehen. Die neue Generation, die diesem Zustand gegenübertritt, ist frei von den Vorurteilen dem Neuen gegenüber, wie sie die frühere Generation beherrschten. Die technische Vervollkommnung aller wie auch gearteten Vehikel des Menschen findet die absolute Bejahung der jungen Generation und hat in ihr eine der früheren entgegengesetzte ganz neue Einstellung zur Umwelt hervorgebracht. Die Gegenstände der heute im Zenit befindlichen Generation leiden unter dem fatalen Kompromiß zwischen einer angenommenen »künstlerischen« Absicht und den technischen Notwendigkeiten und Bindungen; an dem unselbständigen Zurückblicken auf historische Parallelfäile; dem Zwiespalt zwischen Wesen und Erscheinung. Statt die eigenen Gesetzmäßigkeiten der Maschinenproduktion zu erkennen und zu gestalten, begnügte sich diese Zeit mit der ängstlichen Nachfolge einer übrigens nur eingebildeten »Tradition«. Ihr stehen heute jene Werke gegenüber, die, unbelastet durch vergangenheit, primäre Erscheinungen, das Antlitz unserer Zeit bestimmt haben: Auto Flugzeug Telephon Radio Warenhaus Lichtreklame New-York. Diese ohne Rücksicht auf ästhetische Vorurteile gestalteten Dinge sind von einem neuen Menschentyp geschaffen worden: dem Ingenieur. Dieser Ingenieur ist der Gestalter unseres Zeitalters, Kennzeichen seiner Werke: Ökonomie, Präzisiori, Bildung aus reinen, konstruktiven Formen, die der Funktion des Gegenstands entsprechen. Nichts, das bezeichnender für unsere Zeit wäre, als diese Zeugen des Erfindergeistes der Ingenieure, seien es Einzelleistungen: Flugplatz, Fabrikhalle, Triebwagen der Untergrund; seien es Standardformen: Schreibmaschine, Glühbirne oder Motorrad. An ihnen hat sich eine neue - unsere - Einstellung zur Umwelt entwickelt und gestählt. Eine ungeheure Bereicherung des Lebensgefühls ist von diesen uns auf Schritt und Tritt begegnenden technischen Tatsachen ausgegangen. Das Ganze, das Kollektiv, bestimmt schon heute in hohem Maße die materiellen Lebensformen jedes einzelnen: gleichgeartete Grundbedürfnisse des Individuums werden von Standarderzeugnissen befriedigt: Glühbirne, Schallplatte, Van Heusen Kragen, Zeissbücherschrank, Büchsenmilch, Telephon, Büromöbel, Schreibmaschine, Gillette-Apparat. Die Standardisierung, Normung und Elektromechanung der Gebrauchsgegenstände wird noch weiter zunehmen. Folge der Ökonomie ihrer Herstellungsweise und ihres Materialverbrauchs wird eine ständige Verbesserung sein. Doch wäre Elektromechanung als Selbstzweck ein Unsinn; ihre Sinngebung ist ein Folgezustand, der auf der Basis der Befriedigung elementarer Bedürfnisse durch höchstwertige Standardprodukte zum ersten Male eine wirkliche und freie Entfaltung aller schöpferischen Kräfte des Menschen ermöglicht. Auf einigen Gebieten machen Standardisierung, auf den meisten ist fast alles noch zu tun.  
+	</p></div>
+	<div style="clear:left;float:none;"></div>
+	<div class="glyphboxstyle fs140">
+		<div class="glyphbox"><p>A</p><span class="f80">0041</span></div>
+		<div class="glyphbox"><p>Ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>B</p><span class="f80">0042</span></div>
+		<div class="glyphbox"><p>C</p><span class="f80">0043</span></div>
+		<div class="glyphbox f"><p>D</p><span class="f80">0044</span></div>
+		<div class="glyphbox"><p>E</p><span class="f80">0045</span></div>
+		<div class="glyphbox"><p>F</p><span class="f80">0046</span></div>
+		<div class="glyphbox"><p>G</p><span class="f80">0047</span></div>
+		<div class="glyphbox"><p>H</p><span class="f80">0048</span></div>
+		<div class="glyphbox f" id="bw"><p>I</p><span class="f80">0049</span></div>
+		<div class="glyphbox"><p>J</p><span class="f80">004A</span></div>
+		<div class="glyphbox"><p>K</p><span class="f80">004B</span></div>
+		<div class="glyphbox"><p>L</p><span class="f80">004C</span></div>
+		<div class="glyphbox"><p>M</p><span class="f80">004D</span></div>
+		<div class="glyphbox f"><p>N</p><span class="f80">004E</span></div>
+		<div class="glyphbox"><p>O</p><span class="f80">004F</span></div>
+		<div class="glyphbox"><p>Ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>P</p><span class="f80">0050</span></div>
+		<div class="glyphbox"><p>Q</p><span class="f80">0051</span></div>
+		<div class="glyphbox f" id="bw"><p>R</p><span class="f80">0052</span></div>
+		<div class="glyphbox"><p>S</p><span class="f80">0053</span></div>
+		<div class="glyphbox"><p>T</p><span class="f80">0054</span></div>
+		<div class="glyphbox"><p>U</p><span class="f80">0055</span></div>
+		<div class="glyphbox"><p>Ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>V</p><span class="f80">0056</span></div>
+		<div class="glyphbox"><p>W</p><span class="f80">0057</span></div>
+		<div class="glyphbox"><p>X</p><span class="f80">0058</span></div>
+		<div class="glyphbox"><p>Y</p><span class="f80">0059</span></div>
+		<div class="glyphbox"><p>Z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>&#7838;</p><span class="f80">1E9E</span></div>
+		<div class="glyphbox"><p>a</p><span class="f80">0061</span></div>
+		<div class="glyphbox"><p>ä</p><span class="f80">00E4</span></div>
+		<div class="glyphbox"><p>b</p><span class="f80">0062</span></div>
+		<div class="glyphbox"><p>c</p><span class="f80">0063</span></div>
+		<div class="glyphbox f"><p>d</p><span class="f80">0064</span></div>
+		<div class="glyphbox"><p>e</p><span class="f80">0065</span></div>
+		<div class="glyphbox"><p>f</p><span class="f80">0066</span></div>
+		<div class="glyphbox"><p>g</p><span class="f80">0067</span></div>
+		<div class="glyphbox"><p>h</p><span class="f80">0068</span></div>
+		<div class="glyphbox f" id="bw"><p>i</p><span class="f80">0069</span></div>
+		<div class="glyphbox"><p>j</p><span class="f80">006A</span></div>
+		<div class="glyphbox"><p>k</p><span class="f80">006B</span></div>
+		<div class="glyphbox"><p>l</p><span class="f80">006C</span></div>
+		<div class="glyphbox"><p>m</p><span class="f80">006D</span></div>
+		<div class="glyphbox f"><p>n</p><span class="f80">006E</span></div>
+		<div class="glyphbox"><p>o</p><span class="f80">006F</span></div>
+		<div class="glyphbox"><p>ö</p><span class="f80">00F6</span></div>
+		<div class="glyphbox"><p>p</p><span class="f80">0070</span></div>
+		<div class="glyphbox"><p>q</p><span class="f80">0071</span></div>
+		<div class="glyphbox f" id="bw"><p>r</p><span class="f80">0072</span></div>
+		<div class="glyphbox"><p>s</p><span class="f80">0073</span></div>
+		<div class="glyphbox"><p>t</p><span class="f80">0074</span></div>
+		<div class="glyphbox"><p>u</p><span class="f80">0075</span></div>
+		<div class="glyphbox"><p>ü</p><span class="f80">00FC</span></div>
+		<div class="glyphbox f"><p>v</p><span class="f80">0076</span></div>
+		<div class="glyphbox"><p>w</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>x</p><span class="f80">0078</span></div>
+		<div class="glyphbox"><p>y</p><span class="f80">0079</span></div>
+		<div class="glyphbox"><p>z</p><span class="f80">007A</span></div>
+		<div class="glyphbox f" id="bw"><p>ß</p><span class="f80">0077</span></div>
+		<div class="glyphbox"><p>0</p><span class="f80">0030</span></div>
+		<div class="glyphbox"><p>1</p><span class="f80">0031</span></div>
+		<div class="glyphbox"><p>2</p><span class="f80">0032</span></div>
+		<div class="glyphbox"><p>3</p><span class="f80">0033</span></div>
+		<div class="glyphbox f"><p>4</p><span class="f80">0034</span></div>
+		<div class="glyphbox"><p>5</p><span class="f80">0035</span></div>
+		<div class="glyphbox"><p>6</p><span class="f80">0036</span></div>
+		<div class="glyphbox"><p>7</p><span class="f80">0037</span></div>
+		<div class="glyphbox"><p>8</p><span class="f80">0038</span></div>
+		<div class="glyphbox f" id="bw"><p>9</p><span class="f80">0039</span></div>
+		<div class="glyphbox"><p>.</p><span class="f80">002E</span></div>
+		<div class="glyphbox"><p>,</p><span class="f80">002C</span></div>
+		<div class="glyphbox"><p>;</p><span class="f80">003A</span></div>
+		<div class="glyphbox"><p>-</p><span class="f80">002D</span></div>	
+		<div class="glyphbox f"><p>(</p><span class="f80">0028</span></div>
+		<div class="glyphbox"><p>)</p><span class="f80">0029</span></div>
+		<div class="glyphbox"><p>[</p><span class="f80">005B</span></div>
+		<div class="glyphbox"><p>]</p><span class="f80">005C</span></div>
+		<div class="glyphbox"><p>»</p><span class="f80">00AB</span></div>
+		<div class="glyphbox" id="bw"><p>«</p><span class="f80">00AC</span></div>
+	</div>	
+		
+	<div style="clear:left;float:none;"></div>	
+
+</div>
+<script type="text/javascript">
+/*--------------------------------*/
+/*test word variable font settings*/
+/*--------------------------------*/
+var tempY;
+
+var weightslider = document.getElementById("weight_slider");
+var weightoutput = document.getElementById("weight_demo");
+
+weightoutput.innerHTML = weightslider.value;
+
+weightslider.oninput = function() {
+  weightoutput.innerHTML = this.value;
+  tempY = this.value;
+  document.getElementById("h").style['font-variation-settings'] = "'wght'" + tempY;
+  oldY = tempY;
+}
+/*------------------*/
+/*test word pramater*/
+/*------------------*/
+fsize.oninput = function() {
+  var fsize = this.value;
+  document.getElementById("h").style.fontSize = fsize+"px";
+  document.getElementById("wdemo").innerHTML = this.value + "px";
+}
+</script>
+</body>
+</html>
