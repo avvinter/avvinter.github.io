@@ -16,7 +16,7 @@
     }, false)
     </script>
 </head>
-<body>
+<body onresize="setBoxHeight();" onload="setBoxHeight();">
     <div id="wrapper">
         <div id="kopf">
             <div class="name-container">
@@ -49,35 +49,36 @@
             </a>
           </div>
           <!-- Description --->
-            <div class="doc-text">
-            <div class="doc-l">
-            <p>
-              Limit ist eine konstruierte Schriftsippe mit einem normalen und einem Slab Schnitt sowie einer Inline und einer parametrisierten Variante. Der Schriftentwurf leitete sich von einem Raster her und ist ganz ohne Kurven gestaltet. Das Projekt ist auf einer Webseite dokumentiert.
-            </p>
-            </div>
-            <div class="doc-r">
-              <hr class="f-hr">
-              <p>Arbeitsfeld: Schriftgestaltung</p>
-              <hr>
-              <p>Arbeitszeitraum: Oktober 2020 – März 2021</p>
-              <hr>
-              <p>Projektseite: <a id="link" target="_blank" href="Limit/Limit-Normal.html">avvinter.github.io/Limit/Limit-Normal.html</a></p>              
-            </div>
+            <div class="doc-text screen" onclick="click();">
+	            <div class="doc-l">
+	            <p>
+	              Limit ist eine konstruierte Schriftsippe mit einem normalen und einem Slab Schnitt sowie einer Inline und einer parametrisierten Variante. Der Schriftentwurf leitete sich von einem Raster her und ist ganz ohne Kurven gestaltet. Das Projekt ist auf einer Webseite dokumentiert.
+	            </p>
+	            </div>
+	            <div class="doc-r">
+	              <hr class="f-hr">
+	              <p>Arbeitsfeld: Schriftgestaltung</p>
+	              <hr>
+	              <p>Arbeitszeitraum: Oktober 2020 – März 2021</p>
+	              <hr>
+	              <p>Projektseite: <a id="link" target="_blank" href="Limit/Limit-Normal.html">avvinter.github.io/Limit/Limit-Normal.html</a></p>              
+	            </div>
             </div>  
           <!-- Images -->        
           <div class="doc-img imgs" onclick="plusDivs(1,1)" style="max-width:800px">
-              <img class="mySlides1 fadein" src="img/limit-1.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-2.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-3.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-4.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-5.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-6.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-7.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-8.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-9.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-11.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-12.jpg" style="width:100%">
-              <img class="mySlides1 fadein" src="img/limit-13.jpg" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-1.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-2.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-3.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-4.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-5.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-6.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-7.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-8.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-9.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-10.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-11.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-12.png" style="width:100%">
+              <img class="mySlides1 fadein" src="img/limit-13.png" style="width:100%">
             <div style="float:none;clear:left;"></div>
           </div>
           </div>
@@ -151,9 +152,9 @@
             </div>  
           <!-- Images -->     
            <div class="doc-img imgs" onclick="plusDivs(1,3)" style="max-width:800px">
-              <img class="mySlides3 fadein" src="img/zeichensystem-1.jpg" style="width:100%">
-              <img class="mySlides3 fadein" src="img/zeichensystem-2.jpg" style="width:100%">
-              <img class="mySlides3 fadein" src="img/zeichensystem-3.jpg" style="width:100%">
+              <img class="mySlides3 fadein" src="img/zeichensystem-1.png" style="width:100%">
+              <img class="mySlides3 fadein" src="img/zeichensystem-2.png" style="width:100%">
+              <img class="mySlides3 fadein" src="img/zeichensystem-3.png" style="width:100%">
             <div style="float:none;clear:left;"></div>
           </div>
           </div>
@@ -184,7 +185,7 @@
             </div>  
           <!-- Images -->     
           <div class="doc-img imgs" onclick="plusDivs(1,4)" style="max-width:800px">
-              <img class="mySlides4" src="img/weldera.jpg" style="width:100%">
+              <img class="mySlides4" src="img/weldera.png" style="width:100%">
             <div style="float:none;clear:left;"></div>
           </div>
           </div>
@@ -223,19 +224,19 @@
             </div>  
           <!-- Images -->        
           <div class="doc-img imgs" onclick="plusDivs(1,5)" style="max-width:800px">
-              <img class="mySlides5 fadein" src="img/type-experiments-1.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-2.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-3.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-4.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-5.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-6.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-7.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-8.jpg" style="width:100%">
-              <img class="mySlides5 fadein" src="img/type-experiments-9.jpg" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-1.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-2.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-3.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-4.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-5.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-6.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-7.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-8.png" style="width:100%">
+              <img class="mySlides5 fadein" src="img/type-experiments-9.png" style="width:100%">
             <div style="float:none;clear:left;"></div>
           </div>
           </div>
-         
+         <div class="clear"></div>
           <div class="imprint">&copy Aaron Winter 2019<span style="padding: 1px;">–</span>2021</div>
           </div>
           
@@ -274,6 +275,36 @@ function showDivs(n,workNum) {
   x[slideIndexCol[workNum-1]-1].style.display = "block";  
   dots[slideIndexCol[workNum-1]-1].className += " active";
 }
+
+function setBoxHeight(){
+  var w = window.innerWidth;
+  if(w > 799){
+    var contis = document.getElementsByClassName("doc-text");
+
+    for (var i = 0; i < contis.length; i++) {
+      var c = contis[i];
+      c.style.height = (document.getElementsByClassName("imgs")[0].offsetHeight) + "px";
+    }
+  } else {
+    var contis = document.getElementsByClassName("doc-text");
+
+    for (var i = 0; i < contis.length; i++) {
+      var c = contis[i];
+      c.style.height = "auto";
+    }
+  }
+}
+
+function setBackgroundss(){
+  var cols = ["#000","#990f34","#8f7528","#19841c","#058a7f","#0e285e","#470e5e"];
+  var num = Math.floor(Math.random() * 7);
+  var imgDivs = document.getElementsByClassName("imgs");
+  for (var i = 0; i < imgDivs.length; i++) {
+    var c = imgDivs[i];
+    c.style.backgroundColor = cols[num];
+  }
+  setBoxHeight();
+}
+
 </script>
-</body>
 </html>
