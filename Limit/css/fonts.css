@@ -1,22 +1,26 @@
 @font-face {
       font-family: 'limit-parameter';
       src: url('../webfonts/LimitParameterGX.ttf') format('truetype');
-    }
+}
 
 @font-face {
       font-family: 'limit-normal';
       src: url('../webfonts/LimitNormalGX.ttf') format('truetype');
 }
 
+@font-face {
+      font-family: 'limit-inline';
+      src: url('../webfonts/LimitInline-Regular.woff') format('woff');
+}
 
-    @font-face {
+@font-face {
       font-family: 'limit-slab';
       src: url('../webfonts/LimitSlabGX.ttf') format('truetype');
-    }
-	@font-face {
-      font-family: 'limit-140';
-      src: url('../webfonts/LimitNormal-140.woff') format('woff');
-    }
+}
+
+  /* / / / / / / / */
+  /* Limit Normal  */
+  /* / / / / / / / */
 	@font-face {
       font-family: 'limit-100';
       src: url('../webfonts/LimitNormal-100.woff') format('woff');
@@ -41,8 +45,31 @@
       font-family: 'limit-10';
       src: url('../webfonts/LimitNormal-10.woff') format('woff');
     }
-
-      @font-face {
-      font-family: 'limit-inline';
-      src: url('../webfonts/LimitInline-Regular.woff') format('woff');
+  /* / / / / / / */
+  /* Limit Slab  */
+  /* / / / / / / */
+  @font-face {
+      font-family: 'limit-slab-100';
+      src: url('../webfonts/LimitSlab-100.woff') format('woff');
     }
+    @font-face {
+      font-family: 'limit-slab-80';
+      src: url('../webfonts/LimitSlab-80.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'limit-slab-56';
+      src: url('../webfonts/LimitSlab-56.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-slab-32';
+      src: url('../webfonts/LimitSlab-32.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-slab-18';
+      src: url('../webfonts/LimitSlab-18.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-slab-10';
+      src: url('../webfonts/LimitSlab-10.woff') format('woff');
+    }
+

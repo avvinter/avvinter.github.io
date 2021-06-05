@@ -9,11 +9,11 @@
       src: url('../Limit/webfonts/LimitNormal-80.woff') format('woff');
     }
 @font-face {
-      font-family: 'limitscreen-80';
+      font-family: 'LimitScreenCurve-80';
       src: url('../Limit/webfonts/LimitScreenCurve-80.woff') format('woff');
     } 
 @font-face {
-      font-family: 'limitscreen-130';
+      font-family: 'LimitScreenCurve-130';
       src: url('../Limit/webfonts/LimitScreenCurve-130.woff') format('woff');
     }        
 @font-face {
@@ -32,7 +32,7 @@ body{
 margin:0;
 padding:0;
 background-color:#ccc;
-font-family: 'limitscreen-80',sans-serif;
+font-family: 'LimitScreenCurve-80',sans-serif;
 letter-spacing: 0.35px;
     font-size:0.8em;
     text-rendering: geometricPrecision;
@@ -197,7 +197,7 @@ img{background-color:;}
     text-decoration:none;
     }
     .worktitle{
-            font-family: "limitscreen-80",sans-serif;
+            font-family: "LimitScreenCurve-80",sans-serif;
             display:block;
             text-decoration:none;
             color:#111;
@@ -208,7 +208,7 @@ img{background-color:;}
             padding-left:;
     }
     .worktitle:hover{
-        font-family: "limitscreen-130",sans-serif;
+        font-family: "LimitScreenCurve-130",sans-serif;
         letter-spacing: 0.0px;
         text-decoration:;
     }
@@ -227,7 +227,7 @@ img{background-color:;}
         line-height: 14px;
         background-color: #ddd;
         color:#333;
-        font-family: 'limitscreen-80',sans-serif;
+        font-family: 'LimitScreenCurve-80',sans-serif;
     }
     .doc-text:hover{
         cursor:pointer;
@@ -249,10 +249,10 @@ img{background-color:;}
     #f{border-color:#eee;}
     .i:hover{cursor: zoom-in;}
 
-    .screen, .name{font-family: "limitscreen-80",sans-serif;}
+    .screen, .name{font-family: "LimitScreenCurve-80",sans-serif;}
     /*image slide counter*/
 
-    .doc p{margin:0;font-size:12.5px;font-family:"limitscreen-80",sans-serif;float:left;padding:1px 2px 1px 2px;margin-right:1px;}
+    .doc p{margin:0;font-size:12.5px;font-family:"LimitScreenCurve-80",sans-serif;float:left;padding:1px 2px 1px 2px;margin-right:1px;}
     .mySlides {display:none}
     .imgs{background-color: #ddd;}
     .imgs:hover{cursor:pointer;}

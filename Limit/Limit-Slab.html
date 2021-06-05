@@ -24,7 +24,7 @@
 	.textinput-sliders p{font-size: 12px;letter-spacing: 0.5px;font-family:'limit-80';}
 	.inputbox{float:left;box-sizing: border-box;padding: 0px 5px 0px 5px;width:25%;}
 	.fontname{padding:10px;border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
-	#h{font-family: 'limit-slab';font-size: 30px;padding:0px 10px 10px 10px;box-sizing:border-box;border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
+	#h{font-family: 'limit-slab';font-variation-settings:'wght' 100;font-size: 30px;padding:0px 10px 10px 10px;box-sizing:border-box;border-bottom:1px solid #ccc;border-bottom: 0.5px solid #ccc;}
 	.segment-c1{
 		font-size:28px;
 		padding:6px 10px 10px 10px;
@@ -93,13 +93,12 @@
 	}
 	.f80{font-family:'limit-80';}
 
-	.fs140{font-family:'limit-slab';font-variation-settings:'wght' 140;}
-	.fs100{font-family:'limit-slab';font-variation-settings:'wght' 100;}
-	.fs80{font-family:'limit-slab';font-variation-settings:'wght' 80;}
-	.fs56{font-family:'limit-slab';font-variation-settings:'wght' 56;}
-	.fs32{font-family:'limit-slab';font-variation-settings:'wght' 32;}
-	.fs18{font-family:'limit-slab';font-variation-settings:'wght' 18;letter-spacing: 0.5px;}
-	.fs10{font-family:'limit-slab';font-variation-settings:'wght' 10;letter-spacing: 0.5px;}
+	.fs100{font-family:'limit-slab-100';}
+	.fs80{font-family:'limit-slab-80';}
+	.fs56{font-family:'limit-slab-56';}
+	.fs32{font-family:'limit-slab-32';}
+	.fs18{font-family:'limit-slab-18';letter-spacing: 0.5px;}
+	.fs10{font-family:'limit-slab-10';letter-spacing: 0.5px;}
 	.sans{font-family: sans-serif;font-size: 13px;}
 	p{margin:0;padding:0;/*font-variant-numeric: oldstyle-nums;*/}
 	[contenteditable] {outline: 0px solid transparent;}
@@ -157,7 +156,7 @@
 <script type="text/javascript">
 	
     var oldY=100;
-    document.getElementById("h").style[font-variation-settings] = "'wght'" + oldY;
+    /*document.getElementById("h").style[font-variation-settings] = "'wght'" + oldY;*/
     function checkwidth(){
     	var w = window.innerWidth;
     	if(w<601){document.getElementById("ham").style.display= "inline-block";}
