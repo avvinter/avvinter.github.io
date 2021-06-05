@@ -18,6 +18,11 @@
       src: url('../webfonts/LimitSlabGX.ttf') format('truetype');
 }
 
+@font-face {
+      font-family: 'limit-screen';
+      src: url('../webfonts/LimitScreenGX.ttf') format('truetype');
+}
+
   /* / / / / / / / */
   /* Limit Normal  */
   /* / / / / / / / */
@@ -72,4 +77,30 @@
       font-family: 'limit-slab-10';
       src: url('../webfonts/LimitSlab-10.woff') format('woff');
     }
-
+ /* / / / / / / */
+  /* Limit Screen  */
+  /* / / / / / / */
+  @font-face {
+      font-family: 'limit-screen-100';
+      src: url('../webfonts/LimitScreen-100.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'limit-screen-80';
+      src: url('../webfonts/LimitScreen-80.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'limit-screen-56';
+      src: url('../webfonts/LimitScreen-56.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-screen-32';
+      src: url('../webfonts/LimitScreen-32.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-screen-18';
+      src: url('../webfonts/LimitScreen-18.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-screen-10';
+      src: url('../webfonts/LimitScreen-10.woff') format('woff');
+    }
