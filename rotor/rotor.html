@@ -52,23 +52,12 @@
 	</style>
 	<script>
 		function changeAngle(value){
-			var selection = document.getElementsByClassName("glyph");
-			console.log(selection.length);
-			var i;
-			for (i = 0; i < selection.length; i++) {
-			  selection[i].style.transform =  "rotate(" + value + "deg)";
-			}
-		}
+			var selection = document.getElementById("degree");
+			selection.innerHTML = value;
 	</script>
 
 </head>
 <body>
-	<div class="header">
-
-</div>
-
-
-
-<span id="mouse"></span>
+	<span>Umdrehung in Grad: <span class="degree"></span>°</span>
 </body>
 </html>
