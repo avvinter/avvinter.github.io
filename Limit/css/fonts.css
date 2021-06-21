@@ -77,7 +77,7 @@
       font-family: 'limit-slab-10';
       src: url('../webfonts/LimitSlab-10.woff') format('woff');
     }
- /* / / / / / / */
+  /* / / / / / / */
   /* Limit Screen  */
   /* / / / / / / */
   @font-face {
@@ -103,4 +103,31 @@
      @font-face {
       font-family: 'limit-screen-10';
       src: url('../webfonts/LimitScreen-10.woff') format('woff');
+    }
+  /* / / / / / / */
+  /* Limit Mono  */
+  /* / / / / / / */
+  @font-face {
+      font-family: 'limit-mono-100';
+      src: url('../webfonts/LimitMono-100.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'limit-mono-80';
+      src: url('../webfonts/LimitMono-80.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'limit-mono-56';
+      src: url('../webfonts/LimitMono-56.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-mono-32';
+      src: url('../webfonts/LimitMono-32.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-mono-18';
+      src: url('../webfonts/LimitMono-18.woff') format('woff');
+    }
+     @font-face {
+      font-family: 'limit-mono-10';
+      src: url('../webfonts/LimitMono-10.woff') format('woff');
     }
