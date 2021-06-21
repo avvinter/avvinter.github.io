@@ -7,7 +7,6 @@
 	<script src="fulltilt.min.js" type="text/javascript"></script>
 	<script type="text/javascript"> var angle = 0; </script>
 	<script>
-
 			
 	/* iOS re-orientation fix */
 	if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
@@ -19,44 +18,29 @@
 	    });
 	}		
 		
-		// Start the FULLTILT DeviceOrientation listeners and update true north
-		// bearing indicator whenever a new deviceorientation event is fired.
-		var promise = FULLTILT.getDeviceOrientation({'type': 'world'});
-		promise.then(function(orientationControl) {
+	// Start the FULLTILT DeviceOrientation listeners and update true north
+	// bearing indicator whenever a new deviceorientation event is fired.
+	var promise = FULLTILT.getDeviceOrientation({'type': 'world'});
+	promise.then(function(orientationControl) {
 
-			orientationControl.listen(function() {
+		orientationControl.listen(function() {
 
-				// Get latest screen-adjusted deviceorientation data
-				var screenAdjustedEvent = orientationControl.getScreenAdjustedEuler();
+			// Get latest screen-adjusted deviceorientation data
+			var screenAdjustedEvent = orientationControl.getScreenAdjustedEuler();
 	
-				//document.getElementById("mytext").innerText=Math.round(screenAdjustedEvent.alpha);
-				angle = screenAdjustedEvent.alpha;
-
-				var selection = document.getElementsByClassName("glyph");
-				console.log(selection.length);
-				var i;
-				for (i = 0; i < selection.length; i++) {
-				  selection[i].style.transform =  "rotate(" + angle + "deg)";
-				  //selection[i].style.transform =  "rotate(" + 45 + "deg)";
-				}
+			document.getElementById("degree").innerText=Math.round(screenAdjustedEvent.alpha);
+			angle = screenAdjustedEvent.alpha;
 
 			});
 
 		})
-		.catch(function(message) {
-			console.error(message);
-		});
+	.catch(function(message) {
+	console.error(message);
+	});
 		
 	</script>
 	<style type="text/css">
 	</style>
-	<script>
-		function changeAngle(value){
-			var selection = document.getElementById("degree");
-			selection.innerHTML = value;
-		}
-	</script>
-
 </head>
 <body>
 	<span>Umdrehung in Grad: <span class="degree"></span>°</span>
