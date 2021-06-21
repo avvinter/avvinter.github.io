@@ -28,21 +28,20 @@
 			// Get latest screen-adjusted deviceorientation data
 			var screenAdjustedEvent = orientationControl.getScreenAdjustedEuler();
 	
-			document.getElementById("degree").innerText=Math.round(screenAdjustedEvent.alpha);
+			document.getElementById("degree").innerText = Math.round(screenAdjustedEvent.alpha);
 			angle = screenAdjustedEvent.alpha;
 
 			});
 
 		})
+
 	.catch(function(message) {
 	console.error(message);
 	});
-		
 	</script>
-	<style type="text/css">
-	</style>
+	<style type="text/css">p{margin:0;padding:0;}</style>
 </head>
 <body>
-	<span>Umdrehung in Grad: <span id="degree"></span>°</span>
+	<p>Umdrehung in Grad: <p id="degree"></p>°</p>
 </body>
 </html>
