@@ -29,6 +29,8 @@
 			var screenAdjustedEvent = orientationControl.getScreenAdjustedEuler();
 	
 			document.getElementById("degree").innerText = Math.round(screenAdjustedEvent.alpha);
+			document.getElementById("varset").innerText = Math.round((screenAdjustedEvent.alpha / 360.0) * 1000.0);
+			
 			angle = screenAdjustedEvent.alpha;
 
 			});
@@ -39,9 +41,11 @@
 	console.error(message);
 	});
 	</script>
-	<style type="text/css">p{margin:0;padding:0;display:inline-block;}</style>
+	<style type="text/css">p{margin:0;padding:0;float:left;}</style>
 </head>
 <body>
 	<p>Umdrehung in Grad: <p id="degree"></p>°</p>
+	<br>
+	<p>Variation Font Setting: <p id="varset"></p></p>
 </body>
 </html>
