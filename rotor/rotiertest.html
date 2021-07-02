@@ -35,19 +35,20 @@
 	  var alpha    = event.alpha;
 	  var beta     = event.beta;
 	  var gamma    = event.gamma;
-
+	  var interpolval = Math.round(alpha);
 	  // Do stuff with the new orientation data
 	  document.getElementById("degreeNew").innerText = Math.round(alpha);
 	  document.getElementById("varsetNew").innerText = Math.round((alpha / 360.0) * 1000.0);
-	  document.getElementById("rot").style['font-variation-settings'] = "'rttn'" + Math.round(alpha);
+	  document.getElementById("rot").style['font-variation-settings'] = "'rttn'" + interpolval;
 	}
 	</script>
 </head>
 <body>
-<!--<div class="inputbox">
+<div class="inputbox">
 	<input type="range" min="0" max="360" value="0" id="weight_slider">
-</div>-->
-	<button onclick='requestOrientationPermission();'>Request orientation permission</button>
+</div>
+
+<button onclick='requestOrientationPermission();'>Request orientation permission</button>
 
 <div id="h" contenteditable="true" spellcheck="false"><p id="rot">PostScript hat sich über die Jahre hinweg zu einem Standard in der Druckindustrie entwickelt, wurde aber größtenteils vom Portable Document Format (PDF) verdrängt, das ebenfalls von Adobe entwickelt wurde und viele Eigenschaften von PostScript übernommen oder verbessert hat.
 
