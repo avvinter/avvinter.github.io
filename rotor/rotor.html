@@ -7,7 +7,7 @@
 	<script src="fulltilt.min.js" type="text/javascript"></script>
 	<script type="text/javascript"> var angle = 0; </script>
 	<script>
-			
+	/* full tilt js solution*/
 	/* iOS re-orientation fix */
 	if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
 	    /* iOS hides Safari address bar */
@@ -40,12 +40,44 @@
 	.catch(function(message) {
 	console.error(message);
 	});
+
+	/*deviceorientation solution*/
+	 function requestOrientationPermission(){
+        DeviceOrientationEvent.requestPermission()
+        .then(response => {
+            if (response == 'granted') {
+                window.addEventListener('deviceorientation', (e) => {
+                    // do something with e
+                    handleOrientation(e);
+                })
+            }
+        })
+        .catch(console.error)
+    }
+
+    window.addEventListener("deviceorientation", handleOrientation, true);
+
+    function handleOrientation(event) {
+	  var absolute = event.absolute;
+	  var alpha    = event.alpha;
+	  var beta     = event.beta;
+	  var gamma    = event.gamma;
+
+	  // Do stuff with the new orientation data
+	  document.getElementById("degreeNew").innerText = Math.round(alpha);
+	document.getElementById("varsetNew").innerText = Math.round((alpha / 360.0) * 1000.0);
+	}
+
 	</script>
 	<style type="text/css">p{margin:0;padding:0;float:left;}</style>
 </head>
 <body>
 	<p>Umdrehung in Grad: <p id="degree"></p>°</p>
 	<br>
-	<p>Variation Font Setting: <p id="varset"></p></p>
+	<p>Variation Font Setting: <p id="varset"></p></p><br>
+	<p>Umdrehung in Grad: <p id="degreeNew"></p>°</p>
+	<br>
+	<p>Variation Font Setting: <p id="varsetNew"></p></p><br>
+	<button onclick='requestOrientationPermission();'>Request orientation permission</button>
 </body>
 </html>
