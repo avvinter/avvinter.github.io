@@ -8,11 +8,25 @@
 		@font-face {
 	      font-family:'rotier';
 	      src: url('LimitScreenRotationGX.ttf') format('truetype');
-	      /*src: url('Rotier2M-VF.ttf') format('truetype');*/
+	    }
+	    @font-face {
+	      font-family:'ornaments';
+	      src: url('OrnametRotationGX.ttf') format('truetype');
 	    }
 	    #h{font-size: 24px;font-family: 'rotier';}
+	    p{margin:0; padding:0;}
+	    .orn{
+	    	font-family: 'ornaments';
+	    	width:50%;
+	    	float: left;
+	    	background-color: yellow;
+	    	color:red;
+
+	    }
 	</style>
 	    <script type="text/javascript">
+	    		o = document.getElementsByClassName("orn")
+
 	    /* https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari */
 	/*deviceorientation solution*/
 	 function requestOrientationPermission(){
@@ -40,22 +54,33 @@
 	  document.getElementById("degreeNew").innerText = Math.round(alpha);
 	  document.getElementById("varsetNew").innerText = Math.round((alpha / 360.0) * 1000.0);
 	  document.getElementById("h").style['font-variation-settings'] = "'rttn'" + interpolval;
+	  for(var x = 0; x < o.length; x++){
+			o[x].style['font-variation-settings'] = "'rttn'" + interpolval;
+		}
+	}
+	function setsize(){
+		w = window.innerWidth;
+		for(var x = 0; x < o.length; x++){
+			o[x].style.fontSize = ((w/2)-10)+"px";
+		}
 	}
 	</script>
 </head>
-<body>
+<body onload="setsize();" onresize="setsize();">
 <div class="inputbox">
 	<input type="range" min="0" max="360" value="0" id="weight_slider">
 </div>
 
 <button onclick='requestOrientationPermission();'>Request orientation permission</button>
-<p>Umdrehung in Grad: <p id="degree"></p>°</p>
-	<br>
-	<p>Variation Font Setting: <p id="varset"></p></p><br>
 	<p>Umdrehung in Grad: <p id="degreeNew"></p>°</p>
 	<br>
 	<p>Variation Font Setting: <p id="varsetNew"></p></p><br>
-<div id="h" contenteditable="true" spellcheck="false">PostScript hat sich über die Jahre hinweg zu einem Standard in der Druckindustrie entwickelt, wurde aber größtenteils vom Portable Document Format (PDF) verdrängt, das ebenfalls von Adobe entwickelt wurde und viele Eigenschaften von PostScript übernommen oder verbessert hat.
+	<div class="orn">C</div>
+	<div class="orn">D</div>
+	<div class="orn">E</div>
+	<div class="orn">F</div>
+	<div style="float:none;clear:both;"></div>
+<div id="h">PostScript hat sich über die Jahre hinweg zu einem Standard in der Druckindustrie entwickelt, wurde aber größtenteils vom Portable Document Format (PDF) verdrängt, das ebenfalls von Adobe entwickelt wurde und viele Eigenschaften von PostScript übernommen oder verbessert hat.
 
 Desktoppublishing-Programme verfügen in der Regel über eine PostScript-Exportfunktion. Praktisch kann aber aus jeder Anwendung (zum Beispiel aus beliebigen Textverarbeitungsprogrammen) mit Hilfe eines PostScript-Druckertreibers PostScript-Code erzeugt werden, der entweder direkt an ein postscriptfähiges Ausgabegerät gesendet oder in eine Datei geschrieben werden kann. Einzelne Seiten bzw. Grafiken im PostScript-Format können von Desktoppublishing-Programmen und einigen anderen Anwendungen in der Form von Encapsulated-PostScript-Dateien auch importiert werden.
 
