@@ -72,9 +72,8 @@
 </div>
 
 <button onclick='requestOrientationPermission();'>Request orientation permission</button>
-	<p>Umdrehung in Grad: <p id="degreeNew"></p>°</p>
-	<br>
-	<p>Variation Font Setting: <p id="varsetNew"></p></p><br>
+	<p>Umdrehung in Grad: <span id="degreeNew"></span>°</p>
+	<p>Variation Font Setting: <span id="varsetNew"></span></p>
 	<div class="orn">C</div>
 	<div class="orn">D</div>
 	<div class="orn">E</div>
@@ -91,6 +90,9 @@ In unixähnlichen Betriebssystemen ist es üblich, dass Anwendungsprogramme Druc
 	weightslider.oninput = function() {
 	  tempY = this.value;
 	  document.getElementById("h").style['font-variation-settings'] = "'rttn'" + tempY;
+	  for(var x = 0; x < o.length; x++){
+			o[x].style['font-variation-settings'] = "'rttn'" + tempY;
+	  }
 	}
 </script>
 
